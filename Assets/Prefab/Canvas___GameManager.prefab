@@ -1955,9 +1955,9 @@ MonoBehaviour:
     floorLight: {fileID: 114041087433893092}
   selectionLight: {fileID: 21300000, guid: 84dc063a2d142af4f854094ae6a7335d, type: 3}
   nonSelectedLight: {fileID: 21300000, guid: 2e8487830c4a95045a805decf750916a, type: 3}
-  moveButtonClip: {fileID: 0}
-  unusableClip: {fileID: 0}
-  travelSound: {fileID: 0}
+  moveButtonClip: {fileID: 8300000, guid: 62875bb0cacba0a4a8aad1069164bf6c, type: 3}
+  unusableClip: {fileID: 8300000, guid: 7bed109f9ef4a834e93dab6ecc89be48, type: 3}
+  travelSound: {fileID: 8300000, guid: 317c233cbcd691f4a908ce84c1e1dd99, type: 3}
   travelTime: 0
 --- !u!114 &114235702835466252
 MonoBehaviour:

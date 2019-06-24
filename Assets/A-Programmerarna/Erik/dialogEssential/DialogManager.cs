@@ -286,6 +286,7 @@ public class DialogManager : MonoBehaviour
                     isInDialogue = true;
                     ChoseDialogue.Instance.gameObject.GetComponent<Image>().enabled = true;
                     canPlayerMove.Instance.canMove = false;
+                 
                 }
                 else if (quedDialogs.Count >= 2)
                 {
@@ -295,7 +296,9 @@ public class DialogManager : MonoBehaviour
                     isInDialogue = true;
                     ChoseDialogue.Instance.gameObject.GetComponent<Image>().enabled = true;
                     canPlayerMove.Instance.canMove = false;
+                
                 }
+               
             }
         }
     }

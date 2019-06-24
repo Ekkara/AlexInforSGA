@@ -36,6 +36,35 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1870598604722402
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4314824544666662}
+  - component: {fileID: 60163965070534860}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4314824544666662
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1870598604722402}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.2378118, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4719768958738748}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4719768958738748
 Transform:
   m_ObjectHideFlags: 1
@@ -45,7 +74,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.613, y: 0.092, z: 0}
   m_LocalScale: {x: 1.464672, y: 1.464672, z: 1.464672}
-  m_Children: []
+  m_Children:
+  - {fileID: 4314824544666662}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -69,12 +99,12 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!60 &60316297515824100
+--- !u!60 &60163965070534860
 PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1092889690248178}
+  m_GameObject: {fileID: 1870598604722402}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -101,6 +131,38 @@ PolygonCollider2D:
       - {x: 0.11768871, y: -0.3116468}
       - {x: 0.11768871, y: -0.2189764}
       - {x: 0.10103728, y: -0.1989764}
+--- !u!60 &60316297515824100
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1092889690248178}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.64, y: 0.64}
+    newSize: {x: 0.64, y: 0.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.11145586, y: -0.1289764}
+      - {x: -0.130191, y: -0.1489764}
+      - {x: -0.130191, y: -0.31164685}
+      - {x: -0.11145586, y: -0.33122835}
+      - {x: 0.10103728, y: -0.3312283}
+      - {x: 0.11768871, y: -0.3116468}
+      - {x: 0.11768871, y: -0.1489764}
+      - {x: 0.10103728, y: -0.1289764}
 --- !u!95 &95455618025104266
 Animator:
   serializedVersion: 3
@@ -170,7 +232,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efe053553ea4e224aa106956f8cd68f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100
 --- !u!114 &114627874638980084
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -235,50 +296,55 @@ MonoBehaviour:
     frameOfStep: 0000000003000000
     prioOrder: 0
   runAnimations:
-  - nameOfAnimation: 
-    animationSpriteSheet: {fileID: 0}
-    amountOfFrames: 0
-    animationSpeed: 0
+  - nameOfAnimation: Idle
+    animationSpriteSheet: {fileID: 2800000, guid: 20beb079941de584fa276bae11431994,
+      type: 3}
+    amountOfFrames: 3
+    animationSpeed: 1
     flipAnimation: 0
     direction: {x: 0, y: 0}
     speed: 0
     frameOfStep: 
     prioOrder: 0
-  - nameOfAnimation: 
-    animationSpriteSheet: {fileID: 0}
-    amountOfFrames: 0
-    animationSpeed: 0
-    flipAnimation: 0
-    direction: {x: 0, y: 0}
-    speed: 0
-    frameOfStep: 
+  - nameOfAnimation: Right
+    animationSpriteSheet: {fileID: 2800000, guid: 801587f73f645ee43b062fb7e8e21c22,
+      type: 3}
+    amountOfFrames: 6
+    animationSpeed: 2
+    flipAnimation: 1
+    direction: {x: 1, y: 0}
+    speed: 3
+    frameOfStep: 00000000
     prioOrder: 0
-  - nameOfAnimation: 
-    animationSpriteSheet: {fileID: 0}
-    amountOfFrames: 0
-    animationSpeed: 0
+  - nameOfAnimation: Left
+    animationSpriteSheet: {fileID: 2800000, guid: 801587f73f645ee43b062fb7e8e21c22,
+      type: 3}
+    amountOfFrames: 6
+    animationSpeed: 2
     flipAnimation: 0
-    direction: {x: 0, y: 0}
-    speed: 0
-    frameOfStep: 
+    direction: {x: -1, y: 0}
+    speed: 3
+    frameOfStep: 00000000
     prioOrder: 0
-  - nameOfAnimation: 
-    animationSpriteSheet: {fileID: 0}
-    amountOfFrames: 0
-    animationSpeed: 0
-    flipAnimation: 0
-    direction: {x: 0, y: 0}
-    speed: 0
-    frameOfStep: 
+  - nameOfAnimation: Up
+    animationSpriteSheet: {fileID: 2800000, guid: 801587f73f645ee43b062fb7e8e21c22,
+      type: 3}
+    amountOfFrames: 6
+    animationSpeed: 2
+    flipAnimation: 1
+    direction: {x: 0, y: 1}
+    speed: 3
+    frameOfStep: 00000000
     prioOrder: 0
-  - nameOfAnimation: 
-    animationSpriteSheet: {fileID: 0}
-    amountOfFrames: 0
-    animationSpeed: 0
+  - nameOfAnimation: Down
+    animationSpriteSheet: {fileID: 2800000, guid: 801587f73f645ee43b062fb7e8e21c22,
+      type: 3}
+    amountOfFrames: 6
+    animationSpeed: 2
     flipAnimation: 0
-    direction: {x: 0, y: 0}
-    speed: 0
-    frameOfStep: 
+    direction: {x: 0, y: 1}
+    speed: 3
+    frameOfStep: 00000000
     prioOrder: 0
 --- !u!114 &114807486082234826
 MonoBehaviour:

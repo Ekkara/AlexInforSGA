@@ -58,31 +58,35 @@ public class newMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.LogWarning(canPlayerMove.Instance.canMove);
         switch (ActivatedKeyCodeState)
         {
-            case "Idle": //Idle state
-                if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
+            case "Idle": 
+                if (canPlayerMove.Instance.canMove)
                 {
-                    updateAnimation("Right");
-                    ActivatedKeyCodeState = "Right";
-                }
-                if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
-                {
-                    updateAnimation("Left");
-                    ActivatedKeyCodeState = "Left";
-                }
-                if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
-                {
-                    updateAnimation("Up");
-                    ActivatedKeyCodeState = "Up";
-                }
-                if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
-                {
-                    updateAnimation("Down");
-                    ActivatedKeyCodeState = "Down";
+                    if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
+                    {
+                        updateAnimation("Right");
+                        ActivatedKeyCodeState = "Right";
+                    }
+                    if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
+                    {
+                        updateAnimation("Left");
+                        ActivatedKeyCodeState = "Left";
+                    }
+                    if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
+                    {
+                        updateAnimation("Up");
+                        ActivatedKeyCodeState = "Up";
+                    }
+                    if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
+                    {
+                        updateAnimation("Down");
+                        ActivatedKeyCodeState = "Down";
+                    }
                 }
                 break;
-            case "Right": //Right
+            case "Right": 
                 if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.RightArrow))
                 {
                     pushDownOrder("Right");
@@ -106,7 +110,7 @@ public class newMovement : MonoBehaviour
                     ActivatedKeyCodeState = "Down";
                 }
                 break;
-            case "Left": //Left
+            case "Left": 
                 if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.LeftArrow))
                 {
                     pushDownOrder("Left");
@@ -130,7 +134,7 @@ public class newMovement : MonoBehaviour
                     ActivatedKeyCodeState = "Down";
                 }
                 break;
-            case "Up": //Up
+            case "Up": 
                 if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.UpArrow))
                 {
                     pushDownOrder("Up");
@@ -154,7 +158,7 @@ public class newMovement : MonoBehaviour
                     ActivatedKeyCodeState = "Down";
                 }
                 break;
-            case "Down": //Down
+            case "Down": 
                 if (Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.DownArrow))
                 {
                     pushDownOrder("Down");
@@ -182,7 +186,8 @@ public class newMovement : MonoBehaviour
             default:
                 Debug.LogError("Error 404: state in newMovement not found!");
                 break;
-        } // input controll
+        }
+        // input controll
         #region track if movment keys are pressed
         if (Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.DownArrow))
         {
@@ -293,22 +298,31 @@ public class newMovement : MonoBehaviour
 
     IEnumerator playAnimation(movementType currentAnimationType)
     {
-        StartCoroutine(movePlayer(currentAnimationType));
-        //set the animation varibles to match the animation type
-        int frameAt = 0;
-        Texture2D currentAnimation = currentAnimationType.animationSpriteSheet;
-        int frameCount = currentAnimationType.amountOfFrames;
-        float animationPlaySpeed = currentAnimationType.animationSpeed;
-        prevousilyType = currentAnimationType;
-        int[] playFootStepAt = currentAnimationType.frameOfStep;
 
-        float waitTime = animationPlaySpeed / frameCount;
+        if (!canPlayerMove.Instance.canMove && currentAnimationType.nameOfAnimation != "Idle")
+        {
+            updateAnimation("Idle");
+        }
+            StartCoroutine(movePlayer(currentAnimationType));
+            //set the animation varibles to match the animation type
+            int frameAt = 0;
+            Texture2D currentAnimation = currentAnimationType.animationSpriteSheet;
+            int frameCount = currentAnimationType.amountOfFrames;
+            float animationPlaySpeed = currentAnimationType.animationSpeed;
+            prevousilyType = currentAnimationType;
+            int[] playFootStepAt = currentAnimationType.frameOfStep;
+
+            float waitTime = animationPlaySpeed / frameCount;
+        
 
         while (true)
         {
-            if (canPlayerMove.Instance.canMove)
+            if (!canPlayerMove.Instance.canMove && currentAnimationType.nameOfAnimation != "Idle")
             {
-                if (frameCount <= frameAt) { frameAt = 0; }
+                updateAnimation("Idle");
+            }
+
+            if (frameCount <= frameAt) { frameAt = 0; }
 
                 Rect drawedImage = new Rect(64 * frameAt, 0, 64, 64);
                 Sprite currentRect = Sprite.Create(currentAnimation, drawedImage, new Vector2(0.5f, 0.5f), 100.0f);
@@ -346,7 +360,7 @@ public class newMovement : MonoBehaviour
                 }
                 yield return new WaitForSeconds(waitTime);
                 frameAt++;
-            }
+            
         }
     }
     IEnumerator movePlayer(movementType movementType)
@@ -356,9 +370,9 @@ public class newMovement : MonoBehaviour
 
         while (true)
         {
+            yield return null;
             if (canPlayerMove.Instance.canMove)
             {
-                yield return null;
                 rb.MovePosition(transform.position + dir * speed * Time.fixedDeltaTime);
             }
         }
