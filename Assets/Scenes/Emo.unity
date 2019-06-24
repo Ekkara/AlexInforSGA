@@ -3879,6 +3879,187 @@ GameObject:
   m_PrefabParentObject: {fileID: 1056381909664724, guid: 339bd2ec23541f34cab3525cb06944a6,
     type: 2}
   m_PrefabInternal: {fileID: 1465282927}
+--- !u!1 &1023047752
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1023047756}
+  - component: {fileID: 1023047755}
+  - component: {fileID: 1023047754}
+  - component: {fileID: 1023047753}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1023047753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1023047752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 494791b0918cc3b4e91f67699b85b722, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questMode: 1
+  quest: {fileID: 11400000, guid: 35e09769902239f4bad1491818f02a50, type: 2}
+--- !u!114 &1023047754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1023047752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b002be7081f2d04d8abe3ed625318f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueName: 
+  instantiateDialogIfQuestsExistsInCurrent: []
+  instantiateDialogIfQuestsExistsInCompleted:
+  - {fileID: 11400000, guid: 044f3d52e6ae76549af9d3d88fe186e0, type: 2}
+  removeDialogIfQuestsHasCompleted: []
+  diffrentStartSounds:
+  - {fileID: 8300000, guid: 7853d05dca16c084eba5334555d17e95, type: 3}
+  startSoundPitchRange: 0
+  canPlaySound: 1
+  speechBubbles:
+  - NameOfTalkingNPC: Alex
+    PortraitOfTalkingNPC: {fileID: 21300000, guid: 6b7f271470bf2874184de558d202d2a3,
+      type: 3}
+    AnimationSpeed: 0.03
+    soundThatPlayDuringDialogue:
+    - {fileID: 8300000, guid: 4dc7088c299e1b5468d180b055b27372, type: 3}
+    soundPitch: 0
+    soundTimeDelay: 0
+    Text: How old is Sam? 18?...    20? yet the bed still isn't made
+    dialogueTree: 0
+  - NameOfTalkingNPC: Alex
+    PortraitOfTalkingNPC: {fileID: 21300000, guid: 6b7f271470bf2874184de558d202d2a3,
+      type: 3}
+    AnimationSpeed: 0.03
+    soundThatPlayDuringDialogue:
+    - {fileID: 8300000, guid: 4dc7088c299e1b5468d180b055b27372, type: 3}
+    soundPitch: 0
+    soundTimeDelay: 0
+    Text: Well, I made Ashe's bed looks nice.. i guess i can do the same here....
+    dialogueTree: 0
+  - NameOfTalkingNPC: Sam
+    PortraitOfTalkingNPC: {fileID: 21300000, guid: 853b111171a1b6a4da31d52d09321ffd,
+      type: 3}
+    AnimationSpeed: 0.03
+    soundThatPlayDuringDialogue:
+    - {fileID: 8300000, guid: da2d629e4527963488e23ee56af19553, type: 3}
+    soundPitch: 0
+    soundTimeDelay: 0
+    Text: '....'
+    dialogueTree: 0
+  - NameOfTalkingNPC: Sam
+    PortraitOfTalkingNPC: {fileID: 21300000, guid: 853b111171a1b6a4da31d52d09321ffd,
+      type: 3}
+    AnimationSpeed: 0.03
+    soundThatPlayDuringDialogue:
+    - {fileID: 8300000, guid: b4c67f7c3f2721245b2aa3b32c1c197c, type: 3}
+    soundPitch: 0
+    soundTimeDelay: 0
+    Text: "Don\xB4t ever tuch my stuff again..."
+    dialogueTree: 0
+  - NameOfTalkingNPC: Sam
+    PortraitOfTalkingNPC: {fileID: 21300000, guid: 1612250158096e5499e7f100906bd773,
+      type: 3}
+    AnimationSpeed: 0.03
+    soundThatPlayDuringDialogue:
+    - {fileID: 8300000, guid: b4c67f7c3f2721245b2aa3b32c1c197c, type: 3}
+    soundPitch: 0
+    soundTimeDelay: 0
+    Text: 'And for your sake I really hope you haven''t hurt Ms Hopps!  '
+    dialogueTree: 0
+  - NameOfTalkingNPC: Alex
+    PortraitOfTalkingNPC: {fileID: 21300000, guid: c6083b8001230ba41905349c2c38a3b1,
+      type: 3}
+    AnimationSpeed: 0.03
+    soundThatPlayDuringDialogue:
+    - {fileID: 8300000, guid: 4dc7088c299e1b5468d180b055b27372, type: 3}
+    soundPitch: 0
+    soundTimeDelay: 0
+    Text: yeah, Ms Hopps is just fine :)
+    dialogueTree: 0
+  canRepeat: 0
+  hasBeenRead: 0
+  siblings: []
+  answers: []
+  doAfterDialgue:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1023047753}
+        m_MethodName: CompleteQuest
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1033428902}
+        m_MethodName: ChangeBed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!61 &1023047755
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1023047752}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.002199173, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.953125, y: 1.71875}
+    newSize: {x: 0.61, y: 1.1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.94872665, y: 1.71875}
+  m_EdgeRadius: 0
+--- !u!4 &1023047756
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1023047752}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1033428900}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1033428898
 GameObject:
   m_ObjectHideFlags: 0
@@ -3889,6 +4070,8 @@ GameObject:
   - component: {fileID: 1033428900}
   - component: {fileID: 1033428899}
   - component: {fileID: 1033428901}
+  - component: {fileID: 1033428903}
+  - component: {fileID: 1033428902}
   m_Layer: 0
   m_Name: emo bed
   m_TagString: Untagged
@@ -3949,7 +4132,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.03, y: 0.23100002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1023047756}
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3962,10 +4146,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.002199173, y: 0}
+  m_Offset: {x: -0.17134857, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3976,8 +4160,43 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.94872665, y: 1.71875}
+  m_Size: {x: 1.2958221, y: 1.71875}
   m_EdgeRadius: 0
+--- !u!114 &1033428902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1033428898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83b022421ba87e34dbcf12bafb91c356, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest: {fileID: 11400000, guid: 35e09769902239f4bad1491818f02a50, type: 2}
+  newBed: {fileID: 21300000, guid: 6565f926891015d4eb51828b878b582b, type: 3}
+  sr: {fileID: 1033428899}
+--- !u!114 &1033428903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1033428898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d73dcd54a79bc645ac6dc884b682aea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activateDialogWith:
+    onCollisionEnter: 0
+    onCollisionStayWithDelay: 0
+    delay: 0
+    onCollisionAndKeyDown: 1
+    onFunctionCall: 0
+  thisCharacterConversations:
+  - {fileID: 1023047752}
+  isInDialogueTrigger: 0
+  StartDelay: 0
 --- !u!1 &1057841075
 GameObject:
   m_ObjectHideFlags: 0
