@@ -19,7 +19,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4719768958738748}
-  - component: {fileID: 212406149160334862}
   - component: {fileID: 50497859075480996}
   - component: {fileID: 114246021486499424}
   - component: {fileID: 114556800750150460}
@@ -29,6 +28,7 @@ GameObject:
   - component: {fileID: 114807486082234826}
   - component: {fileID: 114842389416322544}
   - component: {fileID: 114054322551707030}
+  - component: {fileID: 114627874638980084}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -43,8 +43,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1092889690248178}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.66, y: -1.46, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.613, y: 0.092, z: 0}
+  m_LocalScale: {x: 1.464672, y: 1.464672, z: 1.464672}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -85,22 +85,22 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 0.64, y: 0.64}
+    newSize: {x: 0.64, y: 0.64}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.1, y: -0.15}
-      - {x: -0.2, y: -0.17}
-      - {x: -0.2, y: -0.42}
-      - {x: -0.1, y: -0.45}
-      - {x: 0.1, y: -0.45}
-      - {x: 0.2, y: -0.42}
-      - {x: 0.2, y: -0.17}
-      - {x: 0.1, y: -0.15}
+    - - {x: -0.11145586, y: -0.1989764}
+      - {x: -0.130191, y: -0.2189764}
+      - {x: -0.130191, y: -0.31164685}
+      - {x: -0.11145586, y: -0.33122835}
+      - {x: 0.10103728, y: -0.3312283}
+      - {x: 0.11768871, y: -0.3116468}
+      - {x: 0.11768871, y: -0.2189764}
+      - {x: 0.10103728, y: -0.1989764}
 --- !u!95 &95455618025104266
 Animator:
   serializedVersion: 3
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1092889690248178}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2362e43854bd68a40aac54e5f8e04363, type: 3}
   m_Name: 
@@ -171,13 +171,122 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 100
---- !u!114 &114807486082234826
+--- !u!114 &114627874638980084
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1092889690248178}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9241f5770a1af7d4d9fa240a0d67e59e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemNeedToRun: {fileID: 0}
+  allAnimations:
+  - nameOfAnimation: Idle
+    animationSpriteSheet: {fileID: 2800000, guid: 20beb079941de584fa276bae11431994,
+      type: 3}
+    amountOfFrames: 3
+    animationSpeed: 1
+    flipAnimation: 0
+    direction: {x: 0, y: 0}
+    speed: 0
+    frameOfStep: 
+    prioOrder: 0
+  - nameOfAnimation: Right
+    animationSpriteSheet: {fileID: 2800000, guid: 153bb2d5fda09d04cbb46fcfe68100f9,
+      type: 3}
+    amountOfFrames: 8
+    animationSpeed: 1
+    flipAnimation: 0
+    direction: {x: 1, y: 0}
+    speed: 1.2
+    frameOfStep: 0000000004000000
+    prioOrder: 0
+  - nameOfAnimation: Left
+    animationSpriteSheet: {fileID: 2800000, guid: 188455ffb87acfa46a59abe333426472,
+      type: 3}
+    amountOfFrames: 8
+    animationSpeed: 1
+    flipAnimation: 0
+    direction: {x: -1, y: 0}
+    speed: 1.2
+    frameOfStep: 0000000004000000
+    prioOrder: 0
+  - nameOfAnimation: Up
+    animationSpriteSheet: {fileID: 2800000, guid: 71ee2bc6b10abd54d8cd8181458b29b8,
+      type: 3}
+    amountOfFrames: 6
+    animationSpeed: 1
+    flipAnimation: 0
+    direction: {x: 0, y: 1}
+    speed: 1.2
+    frameOfStep: 0000000003000000
+    prioOrder: 0
+  - nameOfAnimation: Down
+    animationSpriteSheet: {fileID: 2800000, guid: dc73261476048d0448e23c04bbd8fd1a,
+      type: 3}
+    amountOfFrames: 6
+    animationSpeed: 1
+    flipAnimation: 0
+    direction: {x: 0, y: -1}
+    speed: 1.2
+    frameOfStep: 0000000003000000
+    prioOrder: 0
+  runAnimations:
+  - nameOfAnimation: 
+    animationSpriteSheet: {fileID: 0}
+    amountOfFrames: 0
+    animationSpeed: 0
+    flipAnimation: 0
+    direction: {x: 0, y: 0}
+    speed: 0
+    frameOfStep: 
+    prioOrder: 0
+  - nameOfAnimation: 
+    animationSpriteSheet: {fileID: 0}
+    amountOfFrames: 0
+    animationSpeed: 0
+    flipAnimation: 0
+    direction: {x: 0, y: 0}
+    speed: 0
+    frameOfStep: 
+    prioOrder: 0
+  - nameOfAnimation: 
+    animationSpriteSheet: {fileID: 0}
+    amountOfFrames: 0
+    animationSpeed: 0
+    flipAnimation: 0
+    direction: {x: 0, y: 0}
+    speed: 0
+    frameOfStep: 
+    prioOrder: 0
+  - nameOfAnimation: 
+    animationSpriteSheet: {fileID: 0}
+    amountOfFrames: 0
+    animationSpeed: 0
+    flipAnimation: 0
+    direction: {x: 0, y: 0}
+    speed: 0
+    frameOfStep: 
+    prioOrder: 0
+  - nameOfAnimation: 
+    animationSpriteSheet: {fileID: 0}
+    amountOfFrames: 0
+    animationSpeed: 0
+    flipAnimation: 0
+    direction: {x: 0, y: 0}
+    speed: 0
+    frameOfStep: 
+    prioOrder: 0
+--- !u!114 &114807486082234826
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1092889690248178}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9ab3e14c03ef2894694bf8bc3dabc657, type: 3}
   m_Name: 
@@ -193,47 +302,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3a42e208cb2e8e429b14ee530c91e71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!212 &212406149160334862
-SpriteRenderer:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1092889690248178}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 5
-  m_Sprite: {fileID: 21300002, guid: ee053ae584de21a47bcf5683ce36a789, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0

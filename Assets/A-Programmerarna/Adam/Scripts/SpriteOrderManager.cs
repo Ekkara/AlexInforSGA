@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpriteOrderManager : MonoBehaviour {
 
-	[HideInInspector]
+//	[HideInInspector]
     public SpriteRenderer[] movingSprites;
 
     // Use this for initialization

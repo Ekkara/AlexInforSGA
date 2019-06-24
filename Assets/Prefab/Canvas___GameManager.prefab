@@ -1776,7 +1776,7 @@ MonoBehaviour:
   notSelectedSlider: {fileID: 21300000, guid: 2e8487830c4a95045a805decf750916a, type: 3}
   exitMenuKey: Cancel
   objectsToRemoveWhenInMenu: []
-  menuState: 0
+  menuState: 2
   inisiate: 0
   xStartPos: 0
   yStartPos: -75
@@ -1993,6 +1993,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 851876a6bc427c145b9da91f9526ff91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasLookedAtCards: 0
   currentDoor: 0
   nameOfAllDoors:
   - "HelD\xF6rrKey1"
@@ -2484,6 +2485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ac3b3b240070e846ae9590ffb6a3217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clip: {fileID: 0}
   items:
   - item: {fileID: 11400000, guid: b3112541c2aea3c40b2e8a17d003edf9, type: 2}
 --- !u!114 &114794161512245106
