@@ -121,7 +121,7 @@ public class menuManager : MonoBehaviour
     {
         removeUI();
         changeMenuState(MenuState.noMenu);
-        PlayerMovement.canMove = true;
+        canPlayerMove.Instance.canMove = true;
     }
     public void audioSelect()
     {
@@ -367,7 +367,7 @@ public class menuManager : MonoBehaviour
     {
         menuState = MenuState.noMenu;
         SceneController.instance.resetScene();
-        PlayerMovement.canMove = true;
+        canPlayerMove.Instance.canMove = true;
     }
 
     void selectAChoice()
@@ -393,7 +393,7 @@ public class menuManager : MonoBehaviour
 
                     inisiate = true;
                 }
-                if (Input.GetButtonDown(exitMenuKey) && PlayerMovement.canMove == true)
+                if (Input.GetButtonDown(exitMenuKey) && canPlayerMove.Instance.canMove == true)
                 {
                     changeMenuState(MenuState.menu);
                     return;
@@ -409,7 +409,7 @@ public class menuManager : MonoBehaviour
                     inisiate = true;
                     addUI();
                 }
-                PlayerMovement.canMove = false;
+                canPlayerMove.Instance.canMove = false;
                 if (Input.GetButtonDown(exitMenuKey))
                 {
                     returnToGame();

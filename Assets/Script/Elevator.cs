@@ -53,14 +53,14 @@ public class Elevator : MonoBehaviour
     }
     private void OnEnable()
     {
-        PlayerMovement.canMove = false;
+        canPlayerMove.Instance.canMove = false;
         moveMenu(0);
         menuManager.IsInMenu = true;
     }
 
     private void OnDisable()
     {
-        PlayerMovement.canMove = true;
+        canPlayerMove.Instance.canMove = true;
         menuManager.IsInMenu = false;
     }
 

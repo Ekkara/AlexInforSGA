@@ -306,7 +306,7 @@ public class newMovement : MonoBehaviour
 
         while (true)
         {
-            if (PlayerMovement.canMove)
+            if (canPlayerMove.Instance.canMove)
             {
                 if (frameCount <= frameAt) { frameAt = 0; }
 
@@ -356,7 +356,7 @@ public class newMovement : MonoBehaviour
 
         while (true)
         {
-            if (PlayerMovement.canMove)
+            if (canPlayerMove.Instance.canMove)
             {
                 yield return null;
                 rb.MovePosition(transform.position + dir * speed * Time.fixedDeltaTime);

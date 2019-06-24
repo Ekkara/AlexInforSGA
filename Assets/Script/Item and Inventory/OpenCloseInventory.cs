@@ -9,7 +9,7 @@ public class OpenCloseInventory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.I) && !menuManager.IsInMenu && PlayerMovement.canMove)
+        if (Input.GetKeyDown(KeyCode.I) && !menuManager.IsInMenu && canPlayerMove.Instance.canMove)
         {
 
             inventory.SetActive(true);

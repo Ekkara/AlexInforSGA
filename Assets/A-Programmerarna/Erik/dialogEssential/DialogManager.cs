@@ -249,7 +249,7 @@ public class DialogManager : MonoBehaviour
                             activeDialog.events.Invoke();
                             activeDialog.holder.GetComponent<ContaningDialog>().hasBeenRead = true;
                             activeDialog = null;
-                            //PlayerMovement.canMove = true;
+                            //PlayerMovement.canPlayerMove.Instance.canMove = true;
                             Invoke("changeMoveState", 0.1f);
 
                         }
@@ -285,7 +285,7 @@ public class DialogManager : MonoBehaviour
                     callFunctionOnce = true;
                     isInDialogue = true;
                     ChoseDialogue.Instance.gameObject.GetComponent<Image>().enabled = true;
-                    PlayerMovement.canMove = false;
+                    canPlayerMove.Instance.canMove = false;
                 }
                 else if (quedDialogs.Count >= 2)
                 {
@@ -294,7 +294,7 @@ public class DialogManager : MonoBehaviour
                     callFunctionOnce = true;
                     isInDialogue = true;
                     ChoseDialogue.Instance.gameObject.GetComponent<Image>().enabled = true;
-                    PlayerMovement.canMove = false;
+                    canPlayerMove.Instance.canMove = false;
                 }
             }
         }
@@ -305,7 +305,7 @@ public class DialogManager : MonoBehaviour
     {
         if (activeDialog.dialogs[dialogAt].soundThatPlayDuringDialogue.Length > 0)
         {
-            while (true && !PlayerMovement.canMove)
+            while (true && !canPlayerMove.Instance.canMove)
             {
                 int random = Random.Range(0, activeDialog.dialogs[dialogAt].soundThatPlayDuringDialogue.Length);
 
@@ -350,6 +350,6 @@ public class DialogManager : MonoBehaviour
     //Jens var här, gjorde en hacky solution
     void changeMoveState()
     {
-        if (activeDialog == null) PlayerMovement.canMove = true;
+        if (activeDialog == null) canPlayerMove.Instance.canMove = true;
     }
 }

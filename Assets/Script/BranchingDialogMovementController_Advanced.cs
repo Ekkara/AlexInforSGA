@@ -16,14 +16,14 @@ public class BranchingDialogMovementController_Advanced : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W) && walkUp != null && PlayerMovement.canMove) { invokeAction(walkUp); }
-        if (Input.GetKeyDown(KeyCode.S) && walkDown != null && PlayerMovement.canMove) { invokeAction(walkDown); }
-        if (Input.GetKeyDown(KeyCode.A) && walkLeft != null && PlayerMovement.canMove) { invokeAction(walkLeft); }
-        if (Input.GetKeyDown(KeyCode.D) && walkRight != null && PlayerMovement.canMove) { invokeAction(walkRight); }
+        if (Input.GetKeyDown(KeyCode.W) && walkUp != null && canPlayerMove.Instance.canMove) { invokeAction(walkUp); }
+        if (Input.GetKeyDown(KeyCode.S) && walkDown != null && canPlayerMove.Instance.canMove) { invokeAction(walkDown); }
+        if (Input.GetKeyDown(KeyCode.A) && walkLeft != null && canPlayerMove.Instance.canMove) { invokeAction(walkLeft); }
+        if (Input.GetKeyDown(KeyCode.D) && walkRight != null && canPlayerMove.Instance.canMove) { invokeAction(walkRight); }
         if ((
             Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) ||
             Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D))
-            && PlayerMovement.canMove)
+            && canPlayerMove.Instance.canMove)
         {
             timer.Time = 0.0f;
             if (anyDirectio != null) invokeAction(anyDirectio);

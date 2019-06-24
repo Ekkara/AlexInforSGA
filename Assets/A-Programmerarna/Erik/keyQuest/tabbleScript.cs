@@ -62,7 +62,7 @@ public class tabbleScript : MonoBehaviour
             case TabbleState.atTabbleNotLooking:
                 if (inisiate)
                 {
-                    PlayerMovement.canMove = true;
+                    canPlayerMove.Instance.canMove = true;
                     inisiate = false;
                 }
                 if (Input.GetButtonDown("Submit"))
@@ -212,7 +212,7 @@ public class tabbleScript : MonoBehaviour
         }
         if (tabbleState == TabbleState.atTabbleAndLooking)
         {
-            PlayerMovement.canMove = false;
+            canPlayerMove.Instance.canMove = false;
         }
     }
     void updateMaterial()

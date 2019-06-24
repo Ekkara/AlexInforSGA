@@ -50,13 +50,13 @@ public class InventoryMenu : MonoBehaviour
         MenuIndex = 0;
         settupMenu();
         menuManager.Instance.menuState = menuManager.MenuState.inventory;
-        PlayerMovement.canMove = false;
+        canPlayerMove.Instance.canMove = false;
         menuManager.IsInMenu = true;
     }
 
     private void OnDisable()
     {
-        PlayerMovement.canMove = true;
+        canPlayerMove.Instance.canMove = true;
         menuManager.IsInMenu = false;
         menuManager.Instance.menuState = menuManager.MenuState.noMenu;
     }
@@ -138,7 +138,7 @@ public class InventoryMenu : MonoBehaviour
                             //}
                         }
                         this.gameObject.SetActive(false);
-                        PlayerMovement.canMove = true;
+                        canPlayerMove.Instance.canMove = true;
                         break;
                     }
                 }

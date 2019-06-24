@@ -34,7 +34,7 @@ public class PuzzelController : MonoBehaviour
         if (gotAllNotes)
         {
             Puzzel.SetActive(true);
-            PlayerMovement.canMove = false;
+            canPlayerMove.Instance.canMove = false;
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
