@@ -6,11 +6,13 @@ public class canPlayerMove : MonoBehaviour {
     //vid behov andvänds DialogManager.Instance
     private static canPlayerMove instance;
     public static canPlayerMove Instance { get { return instance; } }
-    public bool canMove;
+    [HideInInspector] public bool canMove;
+    [HideInInspector] public bool isRunning;
 
     // Use this for initialization
     void Start ()
     {
+        isRunning = false;
         canMove = true;
 
         if (instance == null)
