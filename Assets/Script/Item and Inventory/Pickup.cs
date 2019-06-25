@@ -16,7 +16,7 @@ public class Pickup : MonoBehaviour
 
     private void Update()
     {
-        if (inside && Input.GetButtonDown(button) && canPlayerMove.Instance.canMove && !accessOnlyThroughScript)
+        if (inside && Input.GetButtonDown(button) && newMovement.canMove && !accessOnlyThroughScript)
         {
             pickup();
             if (pickupClip != null) AudioManager.instance.playSFXClip(pickupClip);

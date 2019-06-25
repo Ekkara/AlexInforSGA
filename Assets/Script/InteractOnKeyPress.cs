@@ -13,7 +13,7 @@ public class InteractOnKeyPress : MonoBehaviour
 
     private void Update()
     {
-        if (inside && Input.GetButtonDown(button) && canPlayerMove.Instance.canMove)
+        if (inside && Input.GetButtonDown(button) && newMovement.canMove)
         {
             if (soundClip != null) AudioManager.instance.playSFXClip(soundClip);
             unityEvent.Invoke();

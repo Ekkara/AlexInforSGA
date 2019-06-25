@@ -26,7 +26,7 @@ public class AnimationHandler : MonoBehaviour
     {
         float horizontalInput = Input.GetAxisRaw("Horizontal");
         float verticalInput = Input.GetAxisRaw("Vertical");
-        bool playAnim = canPlayerMove.Instance.canMove; 
+        bool playAnim = newMovement.canMove; 
 
         if (playAnim && (Input.GetKey(KeyCode.W) ||  Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow)))
         {

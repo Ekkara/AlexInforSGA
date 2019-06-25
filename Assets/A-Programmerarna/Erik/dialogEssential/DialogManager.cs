@@ -249,7 +249,7 @@ public class DialogManager : MonoBehaviour
                             activeDialog.events.Invoke();
                             activeDialog.holder.GetComponent<ContaningDialog>().hasBeenRead = true;
                             activeDialog = null;
-                            //PlayerMovement.canPlayerMove.Instance.canMove = true;
+                            //PlayerMovement.newMovement.canMove = true;
                             Invoke("changeMoveState", 0.1f);
 
                         }
@@ -285,7 +285,7 @@ public class DialogManager : MonoBehaviour
                     callFunctionOnce = true;
                     isInDialogue = true;
                     ChoseDialogue.Instance.gameObject.GetComponent<Image>().enabled = true;
-                    canPlayerMove.Instance.canMove = false;
+                    newMovement.canMove = false;
                  
                 }
                 else if (quedDialogs.Count >= 2)
@@ -295,7 +295,7 @@ public class DialogManager : MonoBehaviour
                     callFunctionOnce = true;
                     isInDialogue = true;
                     ChoseDialogue.Instance.gameObject.GetComponent<Image>().enabled = true;
-                    canPlayerMove.Instance.canMove = false;
+                    newMovement.canMove = false;
                 
                 }
                
@@ -308,7 +308,7 @@ public class DialogManager : MonoBehaviour
     {
         if (activeDialog.dialogs[dialogAt].soundThatPlayDuringDialogue.Length > 0)
         {
-            while (true && !canPlayerMove.Instance.canMove)
+            while (true && !newMovement.canMove)
             {
                 int random = Random.Range(0, activeDialog.dialogs[dialogAt].soundThatPlayDuringDialogue.Length);
 
@@ -353,6 +353,6 @@ public class DialogManager : MonoBehaviour
     //Jens var här, gjorde en hacky solution
     void changeMoveState()
     {
-        if (activeDialog == null) canPlayerMove.Instance.canMove = true;
+        if (activeDialog == null) newMovement.canMove = true;
     }
 }

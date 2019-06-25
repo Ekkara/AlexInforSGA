@@ -20,9 +20,10 @@ public struct movementType
 public class newMovement : MonoBehaviour
 {
     //[HideInInspector] public static bool canMove;
-
+    
     [SerializeField] Item itemNeedToRun;
-    bool isRunning = false;
+    static bool isRunning = false;
+    [HideInInspector] public static bool canMove;
 
     bool animationBreak = true;
     [SerializeField] movementType[] allAnimations;
@@ -43,7 +44,7 @@ public class newMovement : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        //canMove = true;
+        canMove = true;
 
 
         footStep = gameObject.GetComponent<AudioHandler>();
@@ -58,11 +59,11 @@ public class newMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.LogWarning(canPlayerMove.Instance.canMove);
+        Debug.LogWarning(newMovement.canMove);
         switch (ActivatedKeyCodeState)
         {
             case "Idle": 
-                if (canPlayerMove.Instance.canMove)
+                if (newMovement.canMove)
                 {
                     if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
                     {
@@ -228,7 +229,7 @@ public class newMovement : MonoBehaviour
         }
         #endregion
     }
-    void toggleSprint()
+   public void toggleSprint()
     {
         if (Inventory.instance.hasItem(itemNeedToRun))
         {
@@ -299,7 +300,7 @@ public class newMovement : MonoBehaviour
     IEnumerator playAnimation(movementType currentAnimationType)
     {
 
-        if (!canPlayerMove.Instance.canMove && currentAnimationType.nameOfAnimation != "Idle")
+        if (!newMovement.canMove && currentAnimationType.nameOfAnimation != "Idle")
         {
             updateAnimation("Idle");
         }
@@ -317,7 +318,7 @@ public class newMovement : MonoBehaviour
 
         while (true)
         {
-            if (!canPlayerMove.Instance.canMove && currentAnimationType.nameOfAnimation != "Idle")
+            if (!newMovement.canMove && currentAnimationType.nameOfAnimation != "Idle")
             {
                 updateAnimation("Idle");
             }
@@ -371,7 +372,7 @@ public class newMovement : MonoBehaviour
         while (true)
         {
             yield return null;
-            if (canPlayerMove.Instance.canMove)
+            if (newMovement.canMove)
             {
                 rb.MovePosition(transform.position + dir * speed * Time.fixedDeltaTime);
             }

@@ -52,7 +52,7 @@ public class NoteBehaviour : MonoBehaviour
     {
         if (Input.GetButton("Cancel"))
         {
-            canPlayerMove.Instance.canMove = true;
+            newMovement.canMove = true;
             this.gameObject.SetActive(false);
         }
 

@@ -66,7 +66,7 @@ public class SceneController : MonoBehaviour
         {
             saveScene(scene);
             transitioning = true;
-            canPlayerMove.Instance.canMove = false;
+            newMovement.canMove = false;
             string id = SceneManager.GetActiveScene().name;
             if (PlayerTracker.Instance != null)
             {
@@ -103,7 +103,7 @@ public class SceneController : MonoBehaviour
                 yield return new WaitForEndOfFrame();
             }
             transitioning = false;
-            if (!DialogManager.Instance.isInDialogue) canPlayerMove.Instance.canMove = true;
+            if (!DialogManager.Instance.isInDialogue) newMovement.canMove = true;
         }
 
     }

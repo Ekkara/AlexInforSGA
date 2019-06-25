@@ -3326,7 +3326,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.06, y: -0.09}
+  m_Offset: {x: -0.10131237, y: -0.10062316}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3337,7 +3337,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.76, y: 0.62}
+  m_Size: {x: 0.8426247, y: 0.5987537}
   m_EdgeRadius: 0
 --- !u!1 &754744049
 GameObject:
@@ -3772,8 +3772,8 @@ GameObject:
   - component: {fileID: 869831081}
   - component: {fileID: 869831080}
   - component: {fileID: 869831079}
-  - component: {fileID: 869831078}
   - component: {fileID: 869831082}
+  - component: {fileID: 869831083}
   m_Layer: 0
   m_Name: Table
   m_TagString: Untagged
@@ -3781,21 +3781,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!58 &869831078
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 869831077}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 1.06
 --- !u!114 &869831079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3921,6 +3906,31 @@ MonoBehaviour:
   - {fileID: 2021607023}
   isInDialogueTrigger: 0
   StartDelay: 0
+--- !u!61 &869831083
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 869831077}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.16207385, y: 0.067730665}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.9183517, y: 1.1354613}
+  m_EdgeRadius: 0
 --- !u!1 &876571392
 GameObject:
   m_ObjectHideFlags: 0
@@ -8406,7 +8416,7 @@ MonoBehaviour:
       type: 3}
     AnimationSpeed: 0.04
     soundThatPlayDuringDialogue:
-    - {fileID: 0}
+    - {fileID: 8300000, guid: 49bc95d9906fcfa4faa933ef0977f5fa, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
     Text: 'This key... I know what to do. There''s a spirit in it, and to get it out
@@ -8417,7 +8427,7 @@ MonoBehaviour:
       type: 3}
     AnimationSpeed: 0.04
     soundThatPlayDuringDialogue:
-    - {fileID: 0}
+    - {fileID: 8300000, guid: 49bc95d9906fcfa4faa933ef0977f5fa, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
     Text: The notes on the table over there will tell us which doors, but I think
@@ -8428,7 +8438,7 @@ MonoBehaviour:
       type: 3}
     AnimationSpeed: 0.04
     soundThatPlayDuringDialogue:
-    - {fileID: 0}
+    - {fileID: 8300000, guid: 49bc95d9906fcfa4faa933ef0977f5fa, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
     Text: "Martin,B\u0334\u035D\u034B\u0301\u0306\u0307\u030D\u0306\u0358\u034A\u030B\u0350\u0310\u030B\u0358\u0307\u0344\u030F\u0352\u0300\u0311\u0305\u0351\u0304\u030D\u034C\u0310\u030B\u0300\u0305\u033D\u0307\u0311\u0303\u0301\u0303\u034C\u035D\u030C\u0355\u0319\u035C\u035C\u0324\u0349\u0317\u0330\u032D\u0333\u031E\u0349\u032F\u032C\u0348\u034E\u032A\u0345\u0355\u0322\u0339\u0359\u0326\u0323\u032F\u0348\u034D\u032B\u0319\u0324\u0317\u031Dr\u0334\u030C\u030C\u030D\u0346\u030D\u035D\u0342\u0301\u034B\u0351\u0346\u030C\u0309\u0344\u031A\u0346\u0303\u033F\u030D\u0346\u0350\u0309\u030C\u0305\u0344\u030D\u0352\u0360\u0308\u0340\u033D\u0302\u032A\u0323\u033A\u0347\u035A\u032E\u0317\u031E\u035A\u0330\u0345\u0333\u0322\u033C\u0324\u0325\u0345\u034E\u0316\u031D\u0316\u0356\u0324\u0331\u0333\u0317\u031D\u0329\u033C\u035A\u0323\u0326\u0323\u0324\u0317\u0354t\u0337\u035D\u035D\u035B\u030B\u0346\u0360\u030F\u030F\u030E\u0342\u030E\u033F\u0315\u0341\u0341\u033E\u0304\u031B\u0304\u0308\u0301\u0310\u0344\u0311\u0305\u0304\u030F\u0312\u035B\u0308\u030B\u0314\u0311\u0352\u0314\u0354\u034D\u0356\u0327\u0322\u0328\u032A\u0348\u0349\u0316\u0355\u0333\u0354\u033A\u0323\u0345\u0317\u0321\u0330\u034D\u034D\u0324\u0319\u0348\u034E\u034E\u032Dh\u0334\u0302\u030E\u0309\u033D\u0346\u0309\u033D\u0340\u030C\u0303\u030D\u0306\u0342\u0346\u0306\u0304\u0300\u0309\u0360\u035D\u034A\u034C\u035B\u0344\u0308\u0352\u0341\u0315\u030F\u0352\u032D\u0349\u035A\u0330\u033C\u0347\u032E\u0318\u0331\u0331\u0356\u032B\u0349\u032Ba\u0336\u033F\u0301\u035B\u0341\u034B\u0358\u033F\u0346\u0357\u033F\u030F\u0358\u030D\u0303\u0315\u030E\u0300\u0360\u030F\u030B\u0343\u0344\u0302\u035D\u0308\u0304\u030F\u035D\u0313\u0317\u0316\u0347\u0332\u0356\u033C\u032B\u034E\u031E\u031F\u032E\u0356\u032C\u032B\u0330\u0323\u0326\u0349\u031D\u0318\u033A\u0317\u0320\u0322\u0349\u0325\u032B\u0330\u0329\u0327\u0326\u0331\u0347\u0318
@@ -8440,7 +8450,7 @@ MonoBehaviour:
       type: 3}
     AnimationSpeed: 0.04
     soundThatPlayDuringDialogue:
-    - {fileID: 0}
+    - {fileID: 8300000, guid: 49bc95d9906fcfa4faa933ef0977f5fa, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
     Text: This one's easy, grab the key and let's go!

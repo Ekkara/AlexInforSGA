@@ -10,7 +10,7 @@ public class ElevatorDoor : MonoBehaviour {
 
     private void Update()
     {
-        if (inside && Input.GetButtonDown(button) && canPlayerMove.Instance.canMove)
+        if (inside && Input.GetButtonDown(button) && newMovement.canMove)
         {
             ElevatorWindowControll.Instance.StartElevator();
         }

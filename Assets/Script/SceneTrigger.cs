@@ -31,12 +31,12 @@ public class SceneTrigger : MonoBehaviour
     {
         if (button != "")
         {
-            if (inside && !locked && Input.GetButtonDown(button) && canPlayerMove.Instance.canMove && !DialogManager.Instance.isInDialogue)
+            if (inside && !locked && Input.GetButtonDown(button) && newMovement.canMove && !DialogManager.Instance.isInDialogue)
             {
                 AudioManager.instance.playSFXClip(openAudioClip);
                 SceneController.instance.loadScene(scene);
             }
-            else if (inside && locked && Input.GetButtonDown(button) && canPlayerMove.Instance.canMove && !DialogManager.Instance.isInDialogue)
+            else if (inside && locked && Input.GetButtonDown(button) && newMovement.canMove && !DialogManager.Instance.isInDialogue)
             {
                 //medela att objektet är låst
                 AudioManager.instance.playSFXClip(lockedAudioClip);

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Rollator
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 6bb3875446c145148bfbee4985f3fbbc, type: 3}
-  deleteOnUse: 1
+  deleteOnUse: 0
   useSound: {fileID: 0}
   description: 'I bet I can travel much faster with this!
 

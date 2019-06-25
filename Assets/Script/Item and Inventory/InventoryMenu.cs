@@ -50,13 +50,13 @@ public class InventoryMenu : MonoBehaviour
         MenuIndex = 0;
         settupMenu();
         menuManager.Instance.menuState = menuManager.MenuState.inventory;
-        canPlayerMove.Instance.canMove = false;
+        newMovement.canMove = false;
         menuManager.IsInMenu = true;
     }
 
     private void OnDisable()
     {
-        canPlayerMove.Instance.canMove = true;
+        newMovement.canMove = true;
         menuManager.IsInMenu = false;
         menuManager.Instance.menuState = menuManager.MenuState.noMenu;
     }
@@ -108,7 +108,7 @@ public class InventoryMenu : MonoBehaviour
         if (Input.GetButtonDown("Submit") && !buttonPressed)
         {
             StartCoroutine(shake(menuFields[MenuIndex]));
-
+            
             for (int i = CollisionTracking.collisionList.Count - 1; i >= 0; i--)
             {
                 InteractWithItem iWI = CollisionTracking.collisionList[i].GetComponent<InteractWithItem>();
@@ -138,7 +138,7 @@ public class InventoryMenu : MonoBehaviour
                             //}
                         }
                         this.gameObject.SetActive(false);
-                        canPlayerMove.Instance.canMove = true;
+                        newMovement.canMove = true;
                         break;
                     }
                 }
