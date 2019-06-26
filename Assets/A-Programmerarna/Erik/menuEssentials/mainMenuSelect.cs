@@ -14,6 +14,14 @@ public class mainMenuSelect : MonoBehaviour {
     }
     public void play()
     {
+        try
+        {
+            bagCanvas.Instance.image.color = Color.white;
+        }
+        catch
+        {
+            Debug.Log("first time");
+        }
         menuManager.Instance.inisiate = false;
         menuManager.Instance.menuState = menuManager.MenuState.noMenu;
         SceneController.instance.loadScene("Alex");

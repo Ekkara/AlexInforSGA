@@ -357,6 +357,7 @@ public class menuManager : MonoBehaviour
     }
     public void goToMenu()
     {
+        bagCanvas.Instance.image.color = new Color(0, 0, 0, 0);
         SceneController.instance.loadScene("main", true);
         inisiate = false;
         removeUI();

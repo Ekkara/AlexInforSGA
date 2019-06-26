@@ -17,7 +17,9 @@ public class playNoteAudio : MonoBehaviour
         {
             if(gameObject.transform.GetChild(0).GetComponent<specialButton>() != null)
             {
-                StartCoroutine(gameObject.transform.GetChild(0).GetComponent<specialButton>().playSound());
+                gameObject.transform.GetChild(0).GetComponent<specialButton>().PlayRightOrder();
+                //den undre är gammal
+                //StartCoroutine(gameObject.transform.GetChild(0).GetComponent<specialButton>().playSound());
             }
             else
             {

@@ -14,8 +14,12 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 8de285dd9ff7e4d4a9de070ad1ae0960, type: 3}
   deleteOnUse: 1
   useSound: {fileID: 0}
-  description: 'Sugar
+  description: 'Tomatoes
 
-    Spice
+    Cucumber
 
-    Everything nice'
+    Lettuce
+
+    salmon
+
+    Rice'

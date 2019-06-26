@@ -159,12 +159,22 @@ Prefab:
     - target: {fileID: 212725870397335960, guid: 7cd212a519d6c1f4f9e4657089e88e98,
         type: 2}
       propertyPath: m_SortingOrder
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114416085067455590, guid: 7cd212a519d6c1f4f9e4657089e88e98,
         type: 2}
       propertyPath: speechBubbles.Array.data[0].Text
       value: Sam's apartment.
+      objectReference: {fileID: 0}
+    - target: {fileID: 212725870397335960, guid: 7cd212a519d6c1f4f9e4657089e88e98,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: 1873173341
+      objectReference: {fileID: 0}
+    - target: {fileID: 212725870397335960, guid: 7cd212a519d6c1f4f9e4657089e88e98,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7cd212a519d6c1f4f9e4657089e88e98, type: 2}
@@ -1589,12 +1599,22 @@ Prefab:
     - target: {fileID: 212725870397335960, guid: 7cd212a519d6c1f4f9e4657089e88e98,
         type: 2}
       propertyPath: m_SortingOrder
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114416085067455590, guid: 7cd212a519d6c1f4f9e4657089e88e98,
         type: 2}
       propertyPath: speechBubbles.Array.data[0].Text
       value: Jon and Ed live here together.
+      objectReference: {fileID: 0}
+    - target: {fileID: 212725870397335960, guid: 7cd212a519d6c1f4f9e4657089e88e98,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: 1873173341
+      objectReference: {fileID: 0}
+    - target: {fileID: 212725870397335960, guid: 7cd212a519d6c1f4f9e4657089e88e98,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7cd212a519d6c1f4f9e4657089e88e98, type: 2}
@@ -1693,9 +1713,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 6
+  m_SortingLayerID: 1873173341
+  m_SortingLayer: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 6f3b1533b4879b64a898885730599908, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2903,7 +2923,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.03141582, y: -0.33349097}
+  m_Offset: {x: -0.03199613, y: -0.40987992}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2914,7 +2934,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.27985263, y: 0.33301806}
+  m_Size: {x: 0.2818663, y: 0.18024015}
   m_EdgeRadius: 0
 --- !u!212 &1508683404
 SpriteRenderer:
@@ -2947,9 +2967,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 6
+  m_SortingLayerID: 1873173341
+  m_SortingLayer: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 557711303f3bd0546955f033bdb72e30, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3140,9 +3160,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 6
+  m_SortingLayerID: 1873173341
+  m_SortingLayer: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 6f3b1533b4879b64a898885730599908, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3466,9 +3486,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 6
+  m_SortingLayerID: 1873173341
+  m_SortingLayer: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 557711303f3bd0546955f033bdb72e30, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3504,7 +3524,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.03141582, y: -0.33349097}
+  m_Offset: {x: -0.03199613, y: -0.40987992}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3515,7 +3535,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.27985263, y: 0.33301806}
+  m_Size: {x: 0.2818663, y: 0.18024015}
   m_EdgeRadius: 0
 --- !u!1 &1714849048
 GameObject:
@@ -4032,7 +4052,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.03141582, y: -0.33349097}
+  m_Offset: {x: -0.03199613, y: -0.40987992}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4043,7 +4063,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.27985263, y: 0.33301806}
+  m_Size: {x: 0.2818663, y: 0.18024015}
   m_EdgeRadius: 0
 --- !u!212 &1976934014
 SpriteRenderer:
@@ -4076,9 +4096,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 6
+  m_SortingLayerID: 1873173341
+  m_SortingLayer: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 557711303f3bd0546955f033bdb72e30, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

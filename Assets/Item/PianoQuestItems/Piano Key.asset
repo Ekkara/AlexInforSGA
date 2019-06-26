@@ -14,4 +14,4 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: e110041e9ceb5514baa4be971b6e2f29, type: 3}
   deleteOnUse: 1
   useSound: {fileID: 0}
-  description: Missing keys from Sam's keyboard
+  description: A key that belongs to a piano, wonder where it's from

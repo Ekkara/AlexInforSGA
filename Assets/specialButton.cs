@@ -16,6 +16,7 @@ public class specialButton : MonoBehaviour {
     List<AudioClip> soundInCorrectOrder = new List<AudioClip>();
     List<GameObject> pianoNotes = new List<GameObject>();
 
+    bool rightOrderIsPlaying = false;
 
     // Use this for initialization
     void Start ()
@@ -39,24 +40,32 @@ public class specialButton : MonoBehaviour {
 	void Update () {
 		
 	}
-    public IEnumerator playSound()
+    public void PlayRightOrder()
     {
+        if(!rightOrderIsPlaying)
+        {
+            StartCoroutine(playSound());
+        }        
+    }
+    private IEnumerator playSound()
+    {
+        rightOrderIsPlaying = true;
         gameObject.GetComponent<Image>().sprite = activeB;
 
         for (int i = 0; i < soundInCorrectOrder.Count; i++)
         {
-           GameObject currentNote = thisNB.pianoNotes[correctOrder[i]];
-           beforeChangeColor = currentNote.GetComponent<Image>().color;
+            GameObject currentNote = thisNB.pianoNotes[correctOrder[i]];
+            beforeChangeColor = currentNote.GetComponent<Image>().color;
 
             currentNote.GetComponent<Image>().color = correctOrderColor;
             //AudioManager.instance.playSFXClip(thisNB.pianoNotes[correctOrder[i]].GetComponent<playNoteAudio>().NoteAudio);
-             AudioManager.instance.playSFXClip(soundInCorrectOrder[i]);
+            AudioManager.instance.playSFXClip(soundInCorrectOrder[i]);
             yield return new WaitForSeconds(soundInCorrectOrder[i].length + timeOfset);
             currentNote.GetComponent<Image>().color = beforeChangeColor;
 
         }
         gameObject.GetComponent<Image>().sprite = deactiveB;
-        
+        rightOrderIsPlaying = false;
+        StopAllCoroutines();
     }
-
 }
