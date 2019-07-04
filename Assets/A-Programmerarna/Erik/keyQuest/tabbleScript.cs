@@ -23,6 +23,7 @@ public class tabbleScript : MonoBehaviour
 
     [SerializeField] GameObject tabble;
     [SerializeField] GameObject[] cards;
+    [SerializeField] int cardOrder;
     [SerializeField] AnimationClip pickUpAnimation;
     [SerializeField] AnimationClip putDownAnimation;
 
@@ -123,7 +124,7 @@ public class tabbleScript : MonoBehaviour
                         {
                             if (newCard.transform.GetChild(child).GetComponent<SpriteRenderer>() != null)
                             {
-                                newCard.transform.GetChild(child).GetComponent<SpriteRenderer>().sortingOrder = 7;
+                                newCard.transform.GetChild(child).GetComponent<SpriteRenderer>().sortingOrder = cardOrder;
                             }
                         }
 
@@ -162,7 +163,8 @@ public class tabbleScript : MonoBehaviour
                 }
                 if (!aCardIsZoomedIn)
                 {
-                    if (Input.GetKeyDown(KeyCode.D) && !DialogManager.Instance.isInDialogue)
+                    if ((Input.GetKeyDown(KeyCode.D) && !DialogManager.Instance.isInDialogue)||
+                        (Input.GetKeyDown(KeyCode.RightArrow) && !DialogManager.Instance.isInDialogue))
                     {
                         pointerAtIndex++;
                         if (pointerAtIndex >= existingCards.Count - 1)
@@ -172,7 +174,8 @@ public class tabbleScript : MonoBehaviour
 
                         updateMaterial();
                     }
-                    if (Input.GetKeyDown(KeyCode.A) && !DialogManager.Instance.isInDialogue)
+                    if ((Input.GetKeyDown(KeyCode.A) && !DialogManager.Instance.isInDialogue) ||
+                        (Input.GetKeyDown(KeyCode.LeftArrow) && !DialogManager.Instance.isInDialogue))
                     {
                         pointerAtIndex--;
                         if (pointerAtIndex <= 0)
