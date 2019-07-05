@@ -40,6 +40,8 @@ public class newMovement : MonoBehaviour
     bool upIsPressed = false;
     bool downIsPressed = false;
     movementType prioMovmentType;
+    [SerializeField] float controllCheckSpeed = 1;
+    int times = 0;
 
     // Use this for initialization
     void Start()
@@ -59,7 +61,53 @@ public class newMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.LogWarning(newMovement.canMove);
+        Debug.Log("FPS: " + (int)(1f / Time.unscaledDeltaTime));
+        List<movementType> temp = new List<movementType>();
+
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+        {
+            rightIsPressed = true;
+            temp.Add(findAnimation("Right"));
+        }
+        else
+        {
+            rightIsPressed = false;
+        }
+
+        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+        {
+            downIsPressed = true;
+            temp.Add(findAnimation("Down"));
+        }
+        else
+        {
+            downIsPressed = false;
+        }
+
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+        {
+            leftIsPressed = true;
+            temp.Add(findAnimation("Left"));
+        }
+        else
+        {
+            leftIsPressed = false;
+        }
+
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+        {
+            upIsPressed = true;
+            temp.Add(findAnimation("Up"));
+        }
+        else
+        {
+            upIsPressed = false;
+        }
+        if (temp.Count == 0)
+        {
+            updateAnimation("Idle");
+        }
+        
         switch (ActivatedKeyCodeState)
         {
             case "Idle": 
@@ -190,6 +238,7 @@ public class newMovement : MonoBehaviour
         }
         // input controll
         #region track if movment keys are pressed
+
         if (Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.DownArrow))
         {
             downIsPressed = false;
@@ -271,6 +320,7 @@ public class newMovement : MonoBehaviour
         prioMovmentType = havePrio;
         return;
     }
+    
     void updateAnimation(string animationName)
     {
         StopAllCoroutines();
@@ -378,4 +428,4 @@ public class newMovement : MonoBehaviour
             }
         }
     }
-}
+  }

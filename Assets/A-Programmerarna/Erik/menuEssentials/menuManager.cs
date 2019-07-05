@@ -417,12 +417,12 @@ public class menuManager : MonoBehaviour
                     return;
                 }
 
-                if (Input.GetKeyDown(KeyCode.W))
+                if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
                 {
                     moveMenu(1);
                     playSound(inGameMenuChangeChoiceSound);
                 }
-                if (Input.GetKeyDown(KeyCode.S))
+                if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
                 {
                     moveMenu(-1);
                     playSound(inGameMenuChangeChoiceSound);
@@ -441,20 +441,20 @@ public class menuManager : MonoBehaviour
                 {
                     soundDisplayUpdate();
                 }
-                if (Input.GetKeyDown(KeyCode.D))
+                if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
                 {
                     soundButtons[soundIndex].primeEvent.Invoke();
                 }
-                if (Input.GetKeyDown(KeyCode.A))
+                if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
                 {
                     soundButtons[soundIndex].secEvent.Invoke();
                 }
-                if (Input.GetKeyDown(KeyCode.W))
+                if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
                 {
                     moveSoundMenu(1);
                     soundDisplayUpdate();
                 }
-                if (Input.GetKeyDown(KeyCode.S))
+                if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
                 {
                     moveSoundMenu(-1);
                     soundDisplayUpdate();
@@ -488,13 +488,13 @@ public class menuManager : MonoBehaviour
                     moveMainMenu();
                     inisiate = true;
                 }
-                if (Input.GetKeyDown(KeyCode.W))
+                if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
                 {
                     menuIndex--;
                     moveMainMenu();
                 
                 }
-                if (Input.GetKeyDown(KeyCode.S))
+                if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
                 {
                     menuIndex++;
                     moveMainMenu();
