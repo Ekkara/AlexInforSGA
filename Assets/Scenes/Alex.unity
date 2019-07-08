@@ -1839,7 +1839,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.1582105, y: -2.6961632}
+  m_Offset: {x: 1.1582105, y: -2.49}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1850,7 +1850,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.91139364, y: 0.74684143}
+  m_Size: {x: 0.91139364, y: 1.33}
   m_EdgeRadius: 0
 --- !u!4 &614997800
 Transform:
@@ -1940,7 +1940,6 @@ MonoBehaviour:
   dialogueName: 
   instantiateDialogIfQuestsExistsInCurrent: []
   instantiateDialogIfQuestsExistsInCompleted:
-  - {fileID: 11400000, guid: d0c11910292b13b4f9879fcc5ef2a55e, type: 2}
   - {fileID: 11400000, guid: b3e204f08627780428a189db73b8f195, type: 2}
   removeDialogIfQuestsHasCompleted:
   - {fileID: 11400000, guid: 8b1c3489cc371b443a13d387b769729a, type: 2}
@@ -2442,7 +2441,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 346c4671fce28834cbbd365f63d5b9c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxRange: 2
+  maxRange: 1.5
   volume: 1
   soundClips:
   - {fileID: 8300000, guid: 47825c5cdbdf89d45a8c80f11cf9ce8f, type: 3}
