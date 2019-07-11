@@ -288,7 +288,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 76af95169c2445145b4a36f1cab1bcf8, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
-    Text: Mittens, watch out! Oh, my Jonny is such a brave little boy, he's been trying
+    Text: Jonny, watch out! Oh, my Jonny is such a brave little boy, he's been trying
       to get at it - he wants to protect his brothers and sisters you see. Such a
       brave little boy.
     dialogueTree: 0
@@ -301,8 +301,8 @@ MonoBehaviour:
     soundPitch: 0
     soundTimeDelay: 0
     Text: 'What did you say dear? Can you see what it is? If it''s a bird Champagne
-      will take care of it right quick. She''s very in touch with her wilder side
-      you see, a very skilled hunter. '
+      will take care of it right away. She''s very in touch with her wilder side you
+      see, a very skilled hunter. '
     dialogueTree: 0
   - NameOfTalkingNPC: Alex
     PortraitOfTalkingNPC: {fileID: 21300000, guid: 1c4f4a35ff23b7c4ea6ec70ef80f399d,
@@ -434,7 +434,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 76af95169c2445145b4a36f1cab1bcf8, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
-    Text: 'Of course, Alex dear. Mittens, now you stay there. This nice lady is going
+    Text: 'Of course, Alex dear. Bobby, now you stay there. This nice lady is going
       to help us, so all of you behave and let her do what she needs to. '
     dialogueTree: 0
   - NameOfTalkingNPC: Alex
@@ -455,8 +455,9 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 49bc95d9906fcfa4faa933ef0977f5fa, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
-    Text: (Dr. Oakley next door is using Taffy to experiment on, and she'll realize
-      the cat is gone if we just take him. So, we need to replace Taffy with Mittens.)
+    Text: (Dr. Oakley is next door, using Taffy to experiment on, and she'll realize
+      the cat is gone if we just take him. So, we need to replace Taffy with Mittens.
+      They look almost exactly the same.)
     dialogueTree: 0
   - NameOfTalkingNPC: Alex
     PortraitOfTalkingNPC: {fileID: 21300000, guid: 1c4f4a35ff23b7c4ea6ec70ef80f399d,
@@ -477,7 +478,8 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 4dc7088c299e1b5468d180b055b27372, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
-    Text: (We need to chase him into the cage in the other room)
+    Text: (Mittens usually lounges around in the other room. We can chase him into
+      the cage to trap him.)
     dialogueTree: 0
   canRepeat: 0
   hasBeenRead: 0
@@ -2781,8 +2783,8 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 49bc95d9906fcfa4faa933ef0977f5fa, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
-    Text: "Alright, so it\u2019s either dog or horse then, unless you also like birds.
-      Or maybe hamster?\r"
+    Text: "Alright, so it\u2019s either dogs or horses then, unless you also like
+      birds. Or maybe hamsters?\r"
     dialogueTree: 0
   - NameOfTalkingNPC: Alex
     PortraitOfTalkingNPC: {fileID: 21300000, guid: 1c4f4a35ff23b7c4ea6ec70ef80f399d,
@@ -3349,9 +3351,9 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 76af95169c2445145b4a36f1cab1bcf8, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
-    Text: "Oh, hello Alex dear, have you seen Mittens? It\u2019s time for his bath,
-      and I can\u2019t seem to find him anywhere. Must be hiding, he never liked the
-      baths. But I always tell him a clean boy is a good boy!"
+    Text: "Oh, hello, dear, have you seen Mittens? It\u2019s time for his bath, and
+      I can\u2019t seem to find him anywhere. Must be hiding, he never liked the baths.
+      But I always tell him a clean boy is a good boy!"
     dialogueTree: 0
   - NameOfTalkingNPC: Alex
     PortraitOfTalkingNPC: {fileID: 21300000, guid: c71a4faf018810c47a684445e34eaac9,
@@ -3565,7 +3567,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 49bc95d9906fcfa4faa933ef0977f5fa, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
-    Text: "Awesome, what\u2019s your favourite animal then? Oh, right.\r"
+    Text: "Okay, what\u2019s your favourite animal then? Oh, right.\r"
     dialogueTree: 0
   - NameOfTalkingNPC: Alex
     PortraitOfTalkingNPC: {fileID: 21300000, guid: 1c4f4a35ff23b7c4ea6ec70ef80f399d,
@@ -4180,7 +4182,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 49bc95d9906fcfa4faa933ef0977f5fa, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
-    Text: "Okay, this is sort of weird.\r"
+    Text: "Okay, I've always thought this was sort of weird.\r"
     dialogueTree: 0
   - NameOfTalkingNPC: Alex
     PortraitOfTalkingNPC: {fileID: 21300000, guid: 1c4f4a35ff23b7c4ea6ec70ef80f399d,
@@ -4190,8 +4192,8 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 49bc95d9906fcfa4faa933ef0977f5fa, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
-    Text: "Like, cats are alright, but this is kind of taking it too far. Besides,
-      I\u2019m more of a bird person myself.\r"
+    Text: "Like, cats are alright, but this is kind of taking it too far, isn't it?
+      Besides, I\u2019m more of a bird person myself.\r"
     dialogueTree: 0
   - NameOfTalkingNPC: Alex
     PortraitOfTalkingNPC: {fileID: 21300000, guid: 1c4f4a35ff23b7c4ea6ec70ef80f399d,
@@ -4201,7 +4203,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 49bc95d9906fcfa4faa933ef0977f5fa, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
-    Text: "What about you, do you like cats? Or maybe something else? Uh, move if
+    Text: "What about you? Do you like cats, or maybe something else? Uh, move if
       you like cats, stay still if you don\u2019t."
     dialogueTree: 0
   canRepeat: 0

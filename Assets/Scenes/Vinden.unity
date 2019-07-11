@@ -2043,7 +2043,7 @@ MonoBehaviour:
     soundPitch: 0
     soundTimeDelay: 0
     Text: So, how do we go about doing this? How many spirits are hanging around here?
-      Which ones do we go after first.
+      Which ones do we go after first?
     dialogueTree: 0
   - NameOfTalkingNPC: Spirit
     PortraitOfTalkingNPC: {fileID: 21300000, guid: 64d76d63926eac144b8aefb881b5ddd7,
@@ -2093,7 +2093,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 3849f2c4bd605524eac7b3975cabf259, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
-    Text: "There\u2019s a spirit in your brother\u2019s computer. I thought you might
+    Text: "There is a spirit in your brother\u2019s computer. I thought you might
       want to deal with that situation first."
     dialogueTree: 0
   - NameOfTalkingNPC: Alex
@@ -2115,7 +2115,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 3849f2c4bd605524eac7b3975cabf259, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
-    Text: "Very good, young miss Alexandra. I\u2019ll remain here."
+    Text: Very good, young miss Alexandra. I will remain here.
     dialogueTree: 0
   canRepeat: 0
   hasBeenRead: 0
@@ -3049,6 +3049,7 @@ MonoBehaviour:
       type: 3}
     AnimationSpeed: 0
     soundThatPlayDuringDialogue:
+    - {fileID: 8300000, guid: db346f41ee23dea4584dfcd82be64887, type: 3}
     - {fileID: 8300000, guid: 49bc95d9906fcfa4faa933ef0977f5fa, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
@@ -3079,6 +3080,7 @@ MonoBehaviour:
       type: 3}
     AnimationSpeed: 0
     soundThatPlayDuringDialogue:
+    - {fileID: 8300000, guid: fdc0044f56b14c5498d4c58867b76891, type: 3}
     - {fileID: 8300000, guid: 3849f2c4bd605524eac7b3975cabf259, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
@@ -3123,29 +3125,8 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 3849f2c4bd605524eac7b3975cabf259, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
-    Text: "Young one, we do exist. In fact, I\u2019ve been residing upon this plot
-      of land for well over a century."
-    dialogueTree: 0
-  - NameOfTalkingNPC: Alex
-    PortraitOfTalkingNPC: {fileID: 21300000, guid: 333594b20ca0cb848b4d9753cc078ba9,
-      type: 3}
-    AnimationSpeed: 0
-    soundThatPlayDuringDialogue:
-    - {fileID: 8300000, guid: 49bc95d9906fcfa4faa933ef0977f5fa, type: 3}
-    soundPitch: 0
-    soundTimeDelay: 0
-    Text: Okay? How? I mean, what?
-    dialogueTree: 0
-  - NameOfTalkingNPC: Spirit
-    PortraitOfTalkingNPC: {fileID: 21300000, guid: 64d76d63926eac144b8aefb881b5ddd7,
-      type: 3}
-    AnimationSpeed: 0
-    soundThatPlayDuringDialogue:
-    - {fileID: 8300000, guid: 3849f2c4bd605524eac7b3975cabf259, type: 3}
-    soundPitch: 0
-    soundTimeDelay: 0
-    Text: "Oh dear, my brethren warned me of this\u2026 I am what is called a house
-      spirit in common parlance."
+    Text: "Oh dear, my brethren warned me of this\u2026 We do exist, in fact. For
+      example, I am what is called a house spirit in common parlance."
     dialogueTree: 0
   - NameOfTalkingNPC: Alex
     PortraitOfTalkingNPC: {fileID: 21300000, guid: e5ef3e1f076d8a04295eb32fa7d9111f,
@@ -3166,7 +3147,7 @@ MonoBehaviour:
     soundPitch: 0
     soundTimeDelay: 0
     Text: Not exactly, but you are not far off, young one. I am merely a spirit that
-      lives in this very building. I am tasked with taking care of this building.
+      lives in and takes care of this very building.
     dialogueTree: 0
   - NameOfTalkingNPC: Alex
     PortraitOfTalkingNPC: {fileID: 21300000, guid: 1c4f4a35ff23b7c4ea6ec70ef80f399d,
@@ -3186,28 +3167,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 3849f2c4bd605524eac7b3975cabf259, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
-    Text: Who is that?
-    dialogueTree: 0
-  - NameOfTalkingNPC: Alex
-    PortraitOfTalkingNPC: {fileID: 21300000, guid: e5ef3e1f076d8a04295eb32fa7d9111f,
-      type: 3}
-    AnimationSpeed: 0
-    soundThatPlayDuringDialogue:
-    - {fileID: 8300000, guid: 49bc95d9906fcfa4faa933ef0977f5fa, type: 3}
-    soundPitch: 0
-    soundTimeDelay: 0
-    Text: "The Landlord. Shouldn\u2019t you know who everyone is if you\u2019ve lived
-      here for a century?"
-    dialogueTree: 0
-  - NameOfTalkingNPC: Spirit
-    PortraitOfTalkingNPC: {fileID: 21300000, guid: 64d76d63926eac144b8aefb881b5ddd7,
-      type: 3}
-    AnimationSpeed: 0
-    soundThatPlayDuringDialogue:
-    - {fileID: 8300000, guid: 3849f2c4bd605524eac7b3975cabf259, type: 3}
-    soundPitch: 0
-    soundTimeDelay: 0
-    Text: "Might this\u2026Martin? Be the Human who is in charge of the building\u2019s
+    Text: "Hm... Might this\u2026Martin? Be the Human who is in charge of the building\u2019s
       health and residents?"
     dialogueTree: 0
   - NameOfTalkingNPC: Alex
@@ -3385,7 +3345,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 3849f2c4bd605524eac7b3975cabf259, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
-    Text: "Is it\u2026 creepy? I don\u2019t recognise this concept."
+    Text: "Is it\u2026 creepy? I do not recognise this concept."
     dialogueTree: 0
   - NameOfTalkingNPC: Alex
     PortraitOfTalkingNPC: {fileID: 21300000, guid: e5ef3e1f076d8a04295eb32fa7d9111f,
@@ -3457,7 +3417,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 49bc95d9906fcfa4faa933ef0977f5fa, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
-    Text: Oh. So that's what's going on over there with all the boxes?
+    Text: Oh! So that's what's going on over there with all the boxes?
     dialogueTree: 0
   - NameOfTalkingNPC: Spirit
     PortraitOfTalkingNPC: {fileID: 21300000, guid: 64d76d63926eac144b8aefb881b5ddd7,
@@ -3543,7 +3503,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 49bc95d9906fcfa4faa933ef0977f5fa, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
-    Text: Yeah that, or stupid.
+    Text: Yeah. That, or stupid.
     dialogueTree: 0
   - NameOfTalkingNPC: Spirit
     PortraitOfTalkingNPC: {fileID: 21300000, guid: 71a38b0086b4c1b47ad86c52c2afba3b,
@@ -3604,7 +3564,7 @@ MonoBehaviour:
     soundPitch: 0
     soundTimeDelay: 0
     Text: "Oh, whatever, of course I\u2019m going to thank you\u2026 by\u2026 Aha!
-      I\u2019ll help you help your friends."
+      I\u2019ll help you and your friends."
     dialogueTree: 0
   - NameOfTalkingNPC: Spirit
     PortraitOfTalkingNPC: {fileID: 21300000, guid: 71a38b0086b4c1b47ad86c52c2afba3b,
@@ -3614,7 +3574,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 3849f2c4bd605524eac7b3975cabf259, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
-    Text: Oh my, young miss Alexandra. That would be wonderful!
+    Text: Oh my! Young miss Alexandra, that would be wonderful!
     dialogueTree: 0
   - NameOfTalkingNPC: Alex
     PortraitOfTalkingNPC: {fileID: 21300000, guid: 1c4f4a35ff23b7c4ea6ec70ef80f399d,
@@ -3635,7 +3595,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 3849f2c4bd605524eac7b3975cabf259, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
-    Text: "You assume correctly. It does look quite strange, doesn\u2019t it? Maybe
+    Text: "You assume correctly. It does look quite disturbing, doesn\u2019t it? Maybe
       it\u2019s because it\u2019s scared."
     dialogueTree: 0
   - NameOfTalkingNPC: Alex
@@ -3646,7 +3606,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 49bc95d9906fcfa4faa933ef0977f5fa, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
-    Text: "Scared of what? That thing is what\u2019s terrifying here!"
+    Text: "Scared of what? That thing is what\u2019s scary here!"
     dialogueTree: 0
   - NameOfTalkingNPC: Spirit
     PortraitOfTalkingNPC: {fileID: 21300000, guid: 64d76d63926eac144b8aefb881b5ddd7,
@@ -3656,7 +3616,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 3849f2c4bd605524eac7b3975cabf259, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
-    Text: Regretfully, I agree. Something must be stopping my brethren from leaving,
+    Text: Regretfully, I agree. Something must be preventing my brethren from leaving,
       which I would assume could be rather terrifying.
     dialogueTree: 0
   - NameOfTalkingNPC: Spirit
@@ -3730,7 +3690,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 3849f2c4bd605524eac7b3975cabf259, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
-    Text: Quite.
+    Text: Indeed.
     dialogueTree: 0
   - NameOfTalkingNPC: Alex
     PortraitOfTalkingNPC: {fileID: 21300000, guid: 7aad6f8e13e681842a1ed3925e79bea2,
@@ -6029,6 +5989,7 @@ MonoBehaviour:
       type: 3}
     AnimationSpeed: 0
     soundThatPlayDuringDialogue:
+    - {fileID: 8300000, guid: fdc0044f56b14c5498d4c58867b76891, type: 3}
     - {fileID: 8300000, guid: 3849f2c4bd605524eac7b3975cabf259, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
@@ -6042,8 +6003,8 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 49bc95d9906fcfa4faa933ef0977f5fa, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
-    Text: "I do. Now then, what\u2019s next? How many of your buddies do we have to
-      get\u2026 well, get rid of?"
+    Text: "I do. Now then, what\u2019s next? How many of your buddies do we have to\u2026
+      well, get rid of?"
     dialogueTree: 0
   - NameOfTalkingNPC: Spirit
     PortraitOfTalkingNPC: {fileID: 21300000, guid: 64d76d63926eac144b8aefb881b5ddd7,
@@ -6053,8 +6014,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 3849f2c4bd605524eac7b3975cabf259, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
-    Text: "Well, I believe there are seven in total, and you\u2019ve helped two of
-      them."
+    Text: "I believe there are seven in total, and you\u2019ve helped two of them."
     dialogueTree: 0
   - NameOfTalkingNPC: Alex
     PortraitOfTalkingNPC: {fileID: 21300000, guid: e5ef3e1f076d8a04295eb32fa7d9111f,
@@ -6064,7 +6024,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 49bc95d9906fcfa4faa933ef0977f5fa, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
-    Text: So, five, then?
+    Text: So, five more, then?
     dialogueTree: 0
   - NameOfTalkingNPC: Spirit
     PortraitOfTalkingNPC: {fileID: 21300000, guid: 64d76d63926eac144b8aefb881b5ddd7,
@@ -6096,7 +6056,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 3849f2c4bd605524eac7b3975cabf259, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
-    Text: "Indeed. It\u2019s rather straight-forward. You\u2019ve done ever so well
+    Text: "Indeed. It appears rather straight-forward. You\u2019ve done ever so well
       so far, so I don\u2019t expect it will take long for you."
     dialogueTree: 0
   - NameOfTalkingNPC: Alex
@@ -6296,8 +6256,8 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 3849f2c4bd605524eac7b3975cabf259, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
-    Text: Excellent, indeed, young Alexandra. Your perseverance is an inspiration
-      even to an old spirit like me.
+    Text: Excellent, young miss Alexandra. Your perseverance is an inspiration even
+      to an old spirit like me.
     dialogueTree: 0
   - NameOfTalkingNPC: Alex
     PortraitOfTalkingNPC: {fileID: 21300000, guid: 1c4f4a35ff23b7c4ea6ec70ef80f399d,
@@ -6319,7 +6279,7 @@ MonoBehaviour:
     soundPitch: 0
     soundTimeDelay: 0
     Text: 'More or less. They know their way back to their homes, and us spirits can
-      move mightily quickly if we so do desire. '
+      move very quickly if we so do desire. '
     dialogueTree: 0
   - NameOfTalkingNPC: Spirit
     PortraitOfTalkingNPC: {fileID: 21300000, guid: 71a38b0086b4c1b47ad86c52c2afba3b,
@@ -6369,8 +6329,8 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 3849f2c4bd605524eac7b3975cabf259, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
-    Text: "Indeed, I\u2019ve noticed. I look forward to continuous exchanges of information
-      going forward, young miss."
+    Text: Indeed, I have noticed. I look forward to continued exchanges of information
+      going forward, young miss.
     dialogueTree: 0
   - NameOfTalkingNPC: Alex
     PortraitOfTalkingNPC: {fileID: 21300000, guid: 1c4f4a35ff23b7c4ea6ec70ef80f399d,
@@ -6433,8 +6393,8 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 49bc95d9906fcfa4faa933ef0977f5fa, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
-    Text: "Well\u2026 Guess I\u2019ll just grab that damn glass bowl that started
-      all of this, and head back down."
+    Text: "Well\u2026 Guess I\u2019ll just grab that glass bowl that started all of
+      this, and head back down."
     dialogueTree: 0
   - NameOfTalkingNPC: Spirit
     PortraitOfTalkingNPC: {fileID: 21300000, guid: 71a38b0086b4c1b47ad86c52c2afba3b,
