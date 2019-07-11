@@ -2756,6 +2756,16 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114416085067455590, guid: 7cd212a519d6c1f4f9e4657089e88e98,
+        type: 2}
+      propertyPath: speechBubbles.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114416085067455590, guid: 7cd212a519d6c1f4f9e4657089e88e98,
+        type: 2}
+      propertyPath: speechBubbles.Array.data[1].soundThatPlayDuringDialogue.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4554609405593700, guid: 7cd212a519d6c1f4f9e4657089e88e98, type: 2}
       propertyPath: m_LocalPosition.x
       value: 4.312991
@@ -2796,11 +2806,14 @@ Prefab:
     - target: {fileID: 114416085067455590, guid: 7cd212a519d6c1f4f9e4657089e88e98,
         type: 2}
       propertyPath: speechBubbles.Array.data[0].Text
-      value: 'Warning!
+      value: 'Hm, what does this say...
+
+
+        "Warning!
 
         Water-reactive substance!
 
-        Highly Explosive!'
+        Highly Explosive!"'
       objectReference: {fileID: 0}
     - target: {fileID: 114416085067455590, guid: 7cd212a519d6c1f4f9e4657089e88e98,
         type: 2}
@@ -2821,6 +2834,32 @@ Prefab:
     - target: {fileID: 1810809464381224, guid: 7cd212a519d6c1f4f9e4657089e88e98, type: 2}
       propertyPath: m_TagString
       value: Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 114416085067455590, guid: 7cd212a519d6c1f4f9e4657089e88e98,
+        type: 2}
+      propertyPath: speechBubbles.Array.data[1].PortraitOfTalkingNPC
+      value: 
+      objectReference: {fileID: 21300000, guid: 333594b20ca0cb848b4d9753cc078ba9,
+        type: 3}
+    - target: {fileID: 114416085067455590, guid: 7cd212a519d6c1f4f9e4657089e88e98,
+        type: 2}
+      propertyPath: speechBubbles.Array.data[1].soundThatPlayDuringDialogue.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 49bc95d9906fcfa4faa933ef0977f5fa, type: 3}
+    - target: {fileID: 114416085067455590, guid: 7cd212a519d6c1f4f9e4657089e88e98,
+        type: 2}
+      propertyPath: speechBubbles.Array.data[1].Text
+      value: Explosive!? Whoa, I better stay far away from this tub!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114416085067455590, guid: 7cd212a519d6c1f4f9e4657089e88e98,
+        type: 2}
+      propertyPath: speechBubbles.Array.data[1].NameOfTalkingNPC
+      value: Alex
+      objectReference: {fileID: 0}
+    - target: {fileID: 114416085067455590, guid: 7cd212a519d6c1f4f9e4657089e88e98,
+        type: 2}
+      propertyPath: speechBubbles.Array.data[0].NameOfTalkingNPC
+      value: Alex
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7cd212a519d6c1f4f9e4657089e88e98, type: 2}
@@ -4440,8 +4479,8 @@ MonoBehaviour:
     soundPitch: 0
     soundTimeDelay: 0
     Text: "Eureka! I need an apple or something to hit myself with. I can\u2019t believe\u2026
-      hi! Who are \u2013 no wait I know you? You, uh- yes you live on the ground floor
-      correct? Alex is it not?"
+      Hi! Who are \u2013 no wait I know you? You, uh- Yes you live on the ground floor,
+      correct? Alex, is it not?"
     dialogueTree: 0
   - NameOfTalkingNPC: Alex
     PortraitOfTalkingNPC: {fileID: 21300000, guid: 1c4f4a35ff23b7c4ea6ec70ef80f399d,
@@ -4462,8 +4501,8 @@ MonoBehaviour:
     soundPitch: 0
     soundTimeDelay: 0
     Text: "Vacuum cleaner? My greatest discovery is what\u2019s going on. At last!
-      Maybe I\u2019ll get a Nobel Price, oh who am I kidding OF COURSE I\u2019ll get
-      a Nobel Price. I captured a ghost! In my vacuum cleaner! "
+      Maybe I\u2019ll get a Nobel Price!? Oh who am I kidding, OF COURSE I\u2019ll
+      get a Nobel Price! I captured a ghost! In my vacuum cleaner! "
     dialogueTree: 0
   - NameOfTalkingNPC: Alex
     PortraitOfTalkingNPC: {fileID: 21300000, guid: 1c4f4a35ff23b7c4ea6ec70ef80f399d,
@@ -4485,8 +4524,18 @@ MonoBehaviour:
     soundTimeDelay: 0
     Text: "I wonder what I should do first? Should I get a sample? Do ghosts even
       have matter? I should\u2026 you know if they don\u2019t have matter, I wonder
-      how they would react to something else that doesn\u2019t have matter. Like say,
-      fire. Or force. Perhaps I could try, hm, I do have some explosives here somewhere\u2026 "
+      how they would react to something else that doesn\u2019t have matter. "
+    dialogueTree: 0
+  - NameOfTalkingNPC: Dr. Oakley
+    PortraitOfTalkingNPC: {fileID: 21300000, guid: bb44019432982f441bf0c6c68ca72b4c,
+      type: 3}
+    AnimationSpeed: 0.05
+    soundThatPlayDuringDialogue:
+    - {fileID: 8300000, guid: a5abf397e812aae43abd6c464395674f, type: 3}
+    soundPitch: 0
+    soundTimeDelay: 0
+    Text: "Like say, fire. Or force. Perhaps I could try, hm, I do have some explosives
+      here somewhere\u2026 "
     dialogueTree: 0
   - NameOfTalkingNPC: Alex
     PortraitOfTalkingNPC: {fileID: 21300000, guid: 1c4f4a35ff23b7c4ea6ec70ef80f399d,
@@ -4507,9 +4556,8 @@ MonoBehaviour:
     - {fileID: 8300000, guid: a5abf397e812aae43abd6c464395674f, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
-    Text: "Oh alright, weird like how? Like more ghosts weird? Because I\u2019m sure
-      I have another vacuum cleaner here somewhere I just have to\u2026 aha! Found
-      it!"
+    Text: "Weird like how? Like more ghosts weird? Because I\u2019m sure I have another
+      vacuum cleaner here somewhere I just have to\u2026 aha! Found it!"
     dialogueTree: 0
   - NameOfTalkingNPC: Alex
     PortraitOfTalkingNPC: {fileID: 21300000, guid: 1c4f4a35ff23b7c4ea6ec70ef80f399d,
@@ -4606,7 +4654,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: a5abf397e812aae43abd6c464395674f, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
-    Text: "That\u2019s easy! Lasers, tons and tons of lasers. Don\u2019t go in the
+    Text: "That\u2019s easy! Lasers, tons and tons of lasers! Don\u2019t go in the
       back unless you want to be cut into a million pieces. "
     dialogueTree: 0
   - NameOfTalkingNPC: Dr. Ava
@@ -4641,7 +4689,7 @@ MonoBehaviour:
     soundPitch: 0
     soundTimeDelay: 0
     Text: (We won't be able to figure out that password. We need to.. what was it
-      again. We need to turn it off but it's somewhere else.)
+      again? We need to turn it off but it's somewhere else.)
     dialogueTree: 0
   - NameOfTalkingNPC: Alex
     PortraitOfTalkingNPC: {fileID: 21300000, guid: 1c4f4a35ff23b7c4ea6ec70ef80f399d,
@@ -4650,7 +4698,7 @@ MonoBehaviour:
     soundThatPlayDuringDialogue: []
     soundPitch: 0
     soundTimeDelay: 0
-    Text: (Oh! Now I remember. We need to turn the power off in the whole building.
+    Text: (Oh! Now I remember! We need to turn the power off in the whole building.
       We need to talk to the landlord, in the basement. Let's go!)
     dialogueTree: 0
   canRepeat: 0

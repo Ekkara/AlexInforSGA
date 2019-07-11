@@ -3979,7 +3979,8 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 4dc7088c299e1b5468d180b055b27372, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
-    Text: How old is Sam? 18?...    20? yet the bed still isn't made
+    Text: (Seriously Sam, you're 18 years old, and you're still not making your bed?
+      Cool, cool... Not that it's any of my business.)
     dialogueTree: 0
   - NameOfTalkingNPC: Alex
     PortraitOfTalkingNPC: {fileID: 21300000, guid: 6b7f271470bf2874184de558d202d2a3,
@@ -3989,17 +3990,17 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 4dc7088c299e1b5468d180b055b27372, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
-    Text: Well, I made Ashe's bed looks nice.. i guess i can do the same here....
+    Text: Well, I made Ash's bed earlier... I might as well do the same here.
     dialogueTree: 0
   - NameOfTalkingNPC: Sam
     PortraitOfTalkingNPC: {fileID: 21300000, guid: 853b111171a1b6a4da31d52d09321ffd,
       type: 3}
     AnimationSpeed: 0.03
     soundThatPlayDuringDialogue:
-    - {fileID: 8300000, guid: da2d629e4527963488e23ee56af19553, type: 3}
+    - {fileID: 8300000, guid: f0b1c9b8e602f34448bfb8ecb57e1d42, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
-    Text: '....'
+    Text: '...'
     dialogueTree: 0
   - NameOfTalkingNPC: Sam
     PortraitOfTalkingNPC: {fileID: 21300000, guid: 853b111171a1b6a4da31d52d09321ffd,
@@ -4009,7 +4010,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: b4c67f7c3f2721245b2aa3b32c1c197c, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
-    Text: "Don\xB4t ever tuch my stuff again..."
+    Text: Maybe don't mess around with people's beds.
     dialogueTree: 0
   - NameOfTalkingNPC: Sam
     PortraitOfTalkingNPC: {fileID: 21300000, guid: 1612250158096e5499e7f100906bd773,
@@ -4019,7 +4020,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: b4c67f7c3f2721245b2aa3b32c1c197c, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
-    Text: 'And for your sake I really hope you haven''t hurt Ms Hopps!  '
+    Text: 'And for your sake I really hope you haven''t hurt Ms Hopps! '
     dialogueTree: 0
   - NameOfTalkingNPC: Alex
     PortraitOfTalkingNPC: {fileID: 21300000, guid: c6083b8001230ba41905349c2c38a3b1,
@@ -4029,7 +4030,18 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 4dc7088c299e1b5468d180b055b27372, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
-    Text: yeah, Ms Hopps is just fine :)
+    Text: Oh, don't act like it doesn't look so much better now. And Ms Hopps is just
+      fine.
+    dialogueTree: 0
+  - NameOfTalkingNPC: Sam
+    PortraitOfTalkingNPC: {fileID: 21300000, guid: 1612250158096e5499e7f100906bd773,
+      type: 3}
+    AnimationSpeed: 0.03
+    soundThatPlayDuringDialogue:
+    - {fileID: 8300000, guid: b4c67f7c3f2721245b2aa3b32c1c197c, type: 3}
+    soundPitch: 0
+    soundTimeDelay: 0
+    Text: She better be.
     dialogueTree: 0
   canRepeat: 0
   hasBeenRead: 0
