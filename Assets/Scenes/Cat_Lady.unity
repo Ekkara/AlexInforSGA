@@ -4074,7 +4074,7 @@ MonoBehaviour:
   thisCharacterConversations:
   - {fileID: 364494513}
   isInDialogueTrigger: 0
-  StartDelay: 0
+  StartDelay: 0.2
 --- !u!61 &1119735336
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7021,7 +7021,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8119b3dd3d9edc24d82234968d68c068, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  standStillActionTime: 0
+  standStillActionTime: 2
   walkLeft: {fileID: 0}
   walkRight: {fileID: 0}
   walkUp: {fileID: 0}

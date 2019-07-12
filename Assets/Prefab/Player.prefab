@@ -72,7 +72,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1092889690248178}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.02, y: 2.65, z: 0}
+  m_LocalPosition: {x: -0.613, y: 0.092, z: 0}
   m_LocalScale: {x: 1.464672, y: 1.464672, z: 1.464672}
   m_Children:
   - {fileID: 4314824544666662}
@@ -259,40 +259,40 @@ MonoBehaviour:
     animationSpriteSheet: {fileID: 2800000, guid: 153bb2d5fda09d04cbb46fcfe68100f9,
       type: 3}
     amountOfFrames: 8
-    animationSpeed: 1
+    animationSpeed: 0.7
     flipAnimation: 0
     direction: {x: 1, y: 0}
-    speed: 1.2
+    speed: 1.6
     frameOfStep: 0000000004000000
     prioOrder: 0
   - nameOfAnimation: Left
     animationSpriteSheet: {fileID: 2800000, guid: 188455ffb87acfa46a59abe333426472,
       type: 3}
     amountOfFrames: 8
-    animationSpeed: 1
+    animationSpeed: 0.7
     flipAnimation: 0
     direction: {x: -1, y: 0}
-    speed: 1.2
+    speed: 1.6
     frameOfStep: 0000000004000000
     prioOrder: 0
   - nameOfAnimation: Up
     animationSpriteSheet: {fileID: 2800000, guid: 71ee2bc6b10abd54d8cd8181458b29b8,
       type: 3}
     amountOfFrames: 6
-    animationSpeed: 1
+    animationSpeed: 0.7
     flipAnimation: 0
     direction: {x: 0, y: 1}
-    speed: 1.2
+    speed: 1.4
     frameOfStep: 0000000003000000
     prioOrder: 0
   - nameOfAnimation: Down
     animationSpriteSheet: {fileID: 2800000, guid: dc73261476048d0448e23c04bbd8fd1a,
       type: 3}
     amountOfFrames: 6
-    animationSpeed: 1
+    animationSpeed: 0.7
     flipAnimation: 0
     direction: {x: 0, y: -1}
-    speed: 1.2
+    speed: 1.4
     frameOfStep: 0000000003000000
     prioOrder: 0
   runAnimations:
