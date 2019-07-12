@@ -102,6 +102,15 @@ public class conversationCollection : MonoBehaviour
                 }
             }
         }
+        if (activateDialogWith.delayOnly && !DialogManager.Instance.isInDialogue && menuManager.Instance.menuState == menuManager.MenuState.noMenu)
+        {
+            StartDelay -= Time.deltaTime;
+            if (StartDelay < 0)
+            {
+                StartDelay = activateDialogWith.delay;
+                sendConversationsToDialogManager();
+            }
+        }
     }
     void OnTriggerEnter2D(Collider2D col)
     {

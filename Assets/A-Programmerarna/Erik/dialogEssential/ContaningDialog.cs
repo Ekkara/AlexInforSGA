@@ -13,6 +13,7 @@ public class ActivateDialog
     //this is hidden due to malfunction; since focus is else were contact me if this is needs to be in game 
     [HideInInspector] public bool onCollisionEnter;
     public bool onCollisionStayWithDelay;
+    public bool delayOnly;
     public float delay;
     public bool onCollisionAndKeyDown;
     [Tooltip("ifall ni vill starta dialogen vid ex man går höger använd scriptet 'interactOnKeyPress' ")]

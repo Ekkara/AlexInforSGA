@@ -360,6 +360,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!1 &1467948936547874
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224678355691182674}
+  - component: {fileID: 114137152121182158}
+  m_Layer: 5
+  m_Name: ReturnToSpiritDialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1482761083787416
 GameObject:
   m_ObjectHideFlags: 1
@@ -699,6 +715,22 @@ GameObject:
   - component: {fileID: 114102344869031040}
   m_Layer: 5
   m_Name: Item Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1959314961865420
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224542586088308898}
+  - component: {fileID: 114532501067193446}
+  m_Layer: 5
+  m_Name: TheDialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1543,6 +1575,28 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114137152121182158
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1467948936547874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d73dcd54a79bc645ac6dc884b682aea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activateDialogWith:
+    onCollisionEnter: 0
+    onCollisionStayWithDelay: 0
+    delayOnly: 1
+    delay: 0
+    onCollisionAndKeyDown: 0
+    onFunctionCall: 0
+  thisCharacterConversations:
+  - {fileID: 1959314961865420}
+  isInDialogueTrigger: 0
+  StartDelay: 0
 --- !u!114 &114148644958252172
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2203,6 +2257,49 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114532501067193446
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1959314961865420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b002be7081f2d04d8abe3ed625318f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueName: Return
+  instantiateDialogIfQuestsExistsInCurrent: []
+  instantiateDialogIfQuestsExistsInCompleted:
+  - {fileID: 11400000, guid: 4f2311a1e6402694aa6f54df8d94cf55, type: 2}
+  - {fileID: 11400000, guid: cdc4e2528e935c24e89a09a8064d21b4, type: 2}
+  - {fileID: 11400000, guid: f15a20f02758d674ca9e97112f20384c, type: 2}
+  - {fileID: 11400000, guid: 1a5495cd014a74844ace508005e0f08b, type: 2}
+  - {fileID: 11400000, guid: 56295d2b702f3734a961d4be1a18d2d8, type: 2}
+  removeDialogIfQuestsHasCompleted: []
+  diffrentStartSounds: []
+  startSoundPitchRange: 0
+  canPlaySound: 1
+  speechBubbles:
+  - NameOfTalkingNPC: Alex
+    PortraitOfTalkingNPC: {fileID: 21300000, guid: 372253dffc3791e498690d3eedc049b4,
+      type: 3}
+    AnimationSpeed: 0
+    soundThatPlayDuringDialogue:
+    - {fileID: 8300000, guid: 49bc95d9906fcfa4faa933ef0977f5fa, type: 3}
+    soundPitch: 0
+    soundTimeDelay: 0
+    Text: '[return to spirit dialogue  place holder]'
+    dialogueTree: 0
+  canRepeat: 0
+  hasBeenRead: 0
+  siblings: []
+  answers: []
+  doAfterDialgue:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &114537066214441870
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2488,6 +2585,7 @@ MonoBehaviour:
   clip: {fileID: 0}
   items:
   - item: {fileID: 11400000, guid: b3112541c2aea3c40b2e8a17d003edf9, type: 2}
+  - item: {fileID: 11400000, guid: c074afdfef78f424e8f6a1b7546a2323, type: 2}
 --- !u!114 &114794161512245106
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3323,6 +3421,24 @@ RectTransform:
   m_AnchoredPosition: {x: 40, y: -70.4}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224542586088308898
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1959314961865420}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224678355691182674}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224625909266070266
 RectTransform:
   m_ObjectHideFlags: 1
@@ -3367,6 +3483,25 @@ RectTransform:
   m_AnchoredPosition: {x: 8.35, y: -5.39}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224678355691182674
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1467948936547874}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 224542586088308898}
+  m_Father: {fileID: 224741211736303776}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224686825270251370
 RectTransform:
   m_ObjectHideFlags: 1
@@ -3404,6 +3539,7 @@ RectTransform:
   - {fileID: 224501772213436268}
   - {fileID: 224686825270251370}
   - {fileID: 224467570463714750}
+  - {fileID: 224678355691182674}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
