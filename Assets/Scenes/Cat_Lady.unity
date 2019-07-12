@@ -2767,9 +2767,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueName: CatLady-Hint
-  instantiateDialogIfQuestsExistsInCurrent: []
+  instantiateDialogIfQuestsExistsInCurrent:
+  - {fileID: 11400000, guid: adb49676a37d7474288366c2d867763e, type: 2}
   instantiateDialogIfQuestsExistsInCompleted: []
-  removeDialogIfQuestsHasCompleted: []
+  removeDialogIfQuestsHasCompleted:
+  - {fileID: 11400000, guid: 4f2311a1e6402694aa6f54df8d94cf55, type: 2}
   diffrentStartSounds:
   - {fileID: 8300000, guid: d118e7ff43a140746a51d0a9bccc2eb7, type: 3}
   startSoundPitchRange: 0
@@ -6713,6 +6715,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1975055582}
         m_MethodName: getQuests
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1975055583}
+        m_MethodName: CompleteQuest
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

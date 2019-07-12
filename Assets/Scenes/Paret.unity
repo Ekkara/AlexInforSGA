@@ -1408,8 +1408,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueName: Couple-Hint
   instantiateDialogIfQuestsExistsInCurrent: []
-  instantiateDialogIfQuestsExistsInCompleted: []
-  removeDialogIfQuestsHasCompleted: []
+  instantiateDialogIfQuestsExistsInCompleted:
+  - {fileID: 11400000, guid: 96ecff159ea76834e8c23c6b57d4a3d7, type: 2}
+  removeDialogIfQuestsHasCompleted:
+  - {fileID: 11400000, guid: 591ff2408118e15448a884fc94e9899d, type: 2}
   diffrentStartSounds: []
   startSoundPitchRange: 0
   canPlaySound: 1
