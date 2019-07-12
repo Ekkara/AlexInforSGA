@@ -3315,6 +3315,7 @@ GameObject:
   - component: {fileID: 1659464514}
   - component: {fileID: 1659464517}
   - component: {fileID: 1659464518}
+  - component: {fileID: 1659464519}
   m_Layer: 0
   m_Name: Rulator
   m_TagString: Untagged
@@ -3402,6 +3403,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1815810305}
+  - {fileID: 1704394520}
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3438,6 +3440,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 72cbe869f6e896a47add12cb07f3a640, type: 2}
+--- !u!114 &1659464519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1659464513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d73dcd54a79bc645ac6dc884b682aea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activateDialogWith:
+    onCollisionEnter: 0
+    onCollisionStayWithDelay: 1
+    delay: 0
+    onCollisionAndKeyDown: 0
+    onFunctionCall: 0
+  thisCharacterConversations:
+  - {fileID: 1704394519}
+  isInDialogueTrigger: 0
+  StartDelay: 0
 --- !u!1 &1678216195
 GameObject:
   m_ObjectHideFlags: 0
@@ -3537,6 +3560,96 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.2818663, y: 0.18024015}
   m_EdgeRadius: 0
+--- !u!1 &1704394519
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1704394520}
+  - component: {fileID: 1704394521}
+  m_Layer: 0
+  m_Name: Rullator-Pickup-Dialog
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1704394520
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1704394519}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1659464516}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1704394521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1704394519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b002be7081f2d04d8abe3ed625318f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueName: Rullator pick-up
+  instantiateDialogIfQuestsExistsInCurrent: []
+  instantiateDialogIfQuestsExistsInCompleted: []
+  removeDialogIfQuestsHasCompleted: []
+  diffrentStartSounds:
+  - {fileID: 8300000, guid: 487020f73bb49d04f81b98fab23c0ba6, type: 3}
+  startSoundPitchRange: 0
+  canPlaySound: 1
+  speechBubbles:
+  - NameOfTalkingNPC: Alex
+    PortraitOfTalkingNPC: {fileID: 21300000, guid: 1c4f4a35ff23b7c4ea6ec70ef80f399d,
+      type: 3}
+    AnimationSpeed: 0
+    soundThatPlayDuringDialogue:
+    - {fileID: 8300000, guid: 49bc95d9906fcfa4faa933ef0977f5fa, type: 3}
+    soundPitch: 0
+    soundTimeDelay: 0
+    Text: Hm... Should I? Seems rather rude to take Bertha's walker.
+    dialogueTree: 0
+  - NameOfTalkingNPC: Alex
+    PortraitOfTalkingNPC: {fileID: 21300000, guid: 1c4f4a35ff23b7c4ea6ec70ef80f399d,
+      type: 3}
+    AnimationSpeed: 0
+    soundThatPlayDuringDialogue:
+    - {fileID: 8300000, guid: 49bc95d9906fcfa4faa933ef0977f5fa, type: 3}
+    soundPitch: 0
+    soundTimeDelay: 0
+    Text: Although, speed could be of the essence if I'm to get all the spirits in
+      time...
+    dialogueTree: 0
+  - NameOfTalkingNPC: Alex
+    PortraitOfTalkingNPC: {fileID: 21300000, guid: 1c4f4a35ff23b7c4ea6ec70ef80f399d,
+      type: 3}
+    AnimationSpeed: 0
+    soundThatPlayDuringDialogue:
+    - {fileID: 8300000, guid: 2f9734fbf42d8194d88f250327839a3a, type: 3}
+    - {fileID: 8300000, guid: 49bc95d9906fcfa4faa933ef0977f5fa, type: 3}
+    soundPitch: 0
+    soundTimeDelay: 0
+    Text: Oh, whatever let's ride away!
+    dialogueTree: 0
+  canRepeat: 0
+  hasBeenRead: 0
+  siblings: []
+  answers: []
+  doAfterDialgue:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1714849048
 GameObject:
   m_ObjectHideFlags: 0

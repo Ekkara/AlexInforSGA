@@ -2269,6 +2269,87 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1f19d71b89084624c84ee95db3c7e1e6, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &528937379
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 528937380}
+  - component: {fileID: 528937381}
+  m_Layer: 0
+  m_Name: Scientist-Hint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &528937380
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 528937379}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1374869747}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &528937381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 528937379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b002be7081f2d04d8abe3ed625318f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueName: 
+  instantiateDialogIfQuestsExistsInCurrent: []
+  instantiateDialogIfQuestsExistsInCompleted: []
+  removeDialogIfQuestsHasCompleted: []
+  diffrentStartSounds: []
+  startSoundPitchRange: 0
+  canPlaySound: 1
+  speechBubbles:
+  - NameOfTalkingNPC: Dr. Oakley
+    PortraitOfTalkingNPC: {fileID: 21300000, guid: bb44019432982f441bf0c6c68ca72b4c,
+      type: 3}
+    AnimationSpeed: 0
+    soundThatPlayDuringDialogue:
+    - {fileID: 8300000, guid: a5abf397e812aae43abd6c464395674f, type: 3}
+    soundPitch: 0
+    soundTimeDelay: 0
+    Text: Oh, back to admire the lasers, are you? They are pretty brilliant. As long
+      as the power doesn't go out of course, but that's never happen!
+    dialogueTree: 0
+  - NameOfTalkingNPC: Alex
+    PortraitOfTalkingNPC: {fileID: 21300000, guid: c6083b8001230ba41905349c2c38a3b1,
+      type: 3}
+    AnimationSpeed: 0
+    soundThatPlayDuringDialogue: []
+    soundPitch: 0
+    soundTimeDelay: 0
+    Text: 'If you say so, doc.
+
+
+      (Okay, now where would I find a way to cut the power to the building? Oh, that''s
+      right, Martin! Let''s go to the basement!)'
+    dialogueTree: 0
+  canRepeat: 0
+  hasBeenRead: 0
+  siblings: []
+  answers: []
+  doAfterDialgue:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &546799720
 GameObject:
   m_ObjectHideFlags: 0
@@ -6286,6 +6367,7 @@ Transform:
   - {fileID: 930296905}
   - {fileID: 1701936899}
   - {fileID: 790816086}
+  - {fileID: 528937380}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6335,6 +6417,7 @@ MonoBehaviour:
   - {fileID: 930296904}
   - {fileID: 1701936898}
   - {fileID: 790816085}
+  - {fileID: 528937379}
   isInDialogueTrigger: 0
   StartDelay: 0
 --- !u!61 &1374869750

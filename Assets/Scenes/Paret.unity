@@ -916,7 +916,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4703839868526254, guid: 339bd2ec23541f34cab3525cb06944a6, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1056381909664724, guid: 339bd2ec23541f34cab3525cb06944a6, type: 2}
       propertyPath: m_IsActive
@@ -1061,7 +1061,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2007925441}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &394222657
 MonoBehaviour:
@@ -1366,6 +1366,134 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &491299996
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 491299997}
+  - component: {fileID: 491299998}
+  m_Layer: 0
+  m_Name: Couple-Hint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &491299997
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 491299996}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2007925441}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &491299998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 491299996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b002be7081f2d04d8abe3ed625318f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueName: Couple-Hint
+  instantiateDialogIfQuestsExistsInCurrent: []
+  instantiateDialogIfQuestsExistsInCompleted: []
+  removeDialogIfQuestsHasCompleted: []
+  diffrentStartSounds: []
+  startSoundPitchRange: 0
+  canPlaySound: 1
+  speechBubbles:
+  - NameOfTalkingNPC: Jon
+    PortraitOfTalkingNPC: {fileID: 21300000, guid: 08ba3075ee872a94c958678b229f4ead,
+      type: 3}
+    AnimationSpeed: 0
+    soundThatPlayDuringDialogue:
+    - {fileID: 8300000, guid: a5abf397e812aae43abd6c464395674f, type: 3}
+    soundPitch: 0
+    soundTimeDelay: 0
+    Text: Hi, Alex! Did you find the ring, darling?
+    dialogueTree: 0
+  - NameOfTalkingNPC: Alex
+    PortraitOfTalkingNPC: {fileID: 21300000, guid: 1c4f4a35ff23b7c4ea6ec70ef80f399d,
+      type: 3}
+    AnimationSpeed: 0
+    soundThatPlayDuringDialogue: []
+    soundPitch: 0
+    soundTimeDelay: 0
+    Text: Oh, not yet, sorry.
+    dialogueTree: 0
+  - NameOfTalkingNPC: Ed
+    PortraitOfTalkingNPC: {fileID: 21300000, guid: 08ba3075ee872a94c958678b229f4ead,
+      type: 3}
+    AnimationSpeed: 0
+    soundThatPlayDuringDialogue:
+    - {fileID: 8300000, guid: a5abf397e812aae43abd6c464395674f, type: 3}
+    soundPitch: 0
+    soundTimeDelay: 0
+    Text: Well, don't work too hard, Alex. We'll find it sooner or later. I'm sure
+      you have things to do.
+    dialogueTree: 0
+  - NameOfTalkingNPC: Alex
+    PortraitOfTalkingNPC: {fileID: 21300000, guid: 1b542c9acd6059242ba8275f4e369650,
+      type: 3}
+    AnimationSpeed: 0
+    soundThatPlayDuringDialogue:
+    - {fileID: 8300000, guid: 49bc95d9906fcfa4faa933ef0977f5fa, type: 3}
+    soundPitch: 0
+    soundTimeDelay: 0
+    Text: Oh, it's no bother. I just felt like helping out.
+    dialogueTree: 0
+  - NameOfTalkingNPC: Jon
+    PortraitOfTalkingNPC: {fileID: 21300000, guid: cc91c8b3f22f98444a6ece9003493fb7,
+      type: 3}
+    AnimationSpeed: 0
+    soundThatPlayDuringDialogue:
+    - {fileID: 8300000, guid: a5abf397e812aae43abd6c464395674f, type: 3}
+    soundPitch: 0
+    soundTimeDelay: 0
+    Text: Isn't she just the sweetest girl?
+    dialogueTree: 0
+  - NameOfTalkingNPC: Ed
+    PortraitOfTalkingNPC: {fileID: 21300000, guid: cc91c8b3f22f98444a6ece9003493fb7,
+      type: 3}
+    AnimationSpeed: 0
+    soundThatPlayDuringDialogue:
+    - {fileID: 8300000, guid: a5abf397e812aae43abd6c464395674f, type: 3}
+    soundPitch: 0
+    soundTimeDelay: 0
+    Text: She sure is.
+    dialogueTree: 0
+  - NameOfTalkingNPC: Alex
+    PortraitOfTalkingNPC: {fileID: 21300000, guid: e5ef3e1f076d8a04295eb32fa7d9111f,
+      type: 3}
+    AnimationSpeed: 0
+    soundThatPlayDuringDialogue:
+    - {fileID: 8300000, guid: 49bc95d9906fcfa4faa933ef0977f5fa, type: 3}
+    soundPitch: 0
+    soundTimeDelay: 0
+    Text: (Just gotta get my hands on that fishing rod, so I can fish the ring out
+      of the bowl.)
+    dialogueTree: 0
+  canRepeat: 0
+  hasBeenRead: 0
+  siblings: []
+  answers: []
+  doAfterDialgue:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &555926609
 GameObject:
   m_ObjectHideFlags: 0
@@ -4204,7 +4332,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2007925441}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1494018824
 MonoBehaviour:
@@ -5697,6 +5825,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 823996994}
+  - {fileID: 491299997}
   - {fileID: 1494018823}
   - {fileID: 394222656}
   - {fileID: 342519730}
@@ -5774,6 +5903,7 @@ MonoBehaviour:
   - {fileID: 823996993}
   - {fileID: 1494018822}
   - {fileID: 394222655}
+  - {fileID: 491299996}
   isInDialogueTrigger: 0
   StartDelay: 0
 --- !u!114 &2007925445

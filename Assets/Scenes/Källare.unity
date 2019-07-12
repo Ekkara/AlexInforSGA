@@ -329,6 +329,7 @@ Transform:
   - {fileID: 95105697}
   - {fileID: 1507287534}
   - {fileID: 294084255}
+  - {fileID: 1982296650}
   m_Father: {fileID: 0}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4996,7 +4997,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: d435d626c0ae69e4ca6b0fc6d602e22b, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
-    Text: Alexandra. Anythong you need help with?
+    Text: Alexandra. Anything you need help with?
     dialogueTree: 0
   - NameOfTalkingNPC: Alex
     PortraitOfTalkingNPC: {fileID: 21300000, guid: 1c4f4a35ff23b7c4ea6ec70ef80f399d,
@@ -5782,8 +5783,8 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 49bc95d9906fcfa4faa933ef0977f5fa, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
-    Text: 'This key... I know what to do. There''s a spirit in it, and to get it out
-      we need to unlock some doors in the right order. '
+    Text: This key... I know what to do. There's a spirit in it, and to get it out
+      we need to unlock some doors in the right order.
     dialogueTree: 0
   - NameOfTalkingNPC: Alex
     PortraitOfTalkingNPC: {fileID: 21300000, guid: 1c4f4a35ff23b7c4ea6ec70ef80f399d,
@@ -6424,6 +6425,94 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1982296649
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1982296650}
+  - component: {fileID: 1982296651}
+  m_Layer: 0
+  m_Name: Landlord-Loop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1982296650
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1982296649}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 41975090}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1982296651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1982296649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b002be7081f2d04d8abe3ed625318f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueName: Landlord-Hint
+  instantiateDialogIfQuestsExistsInCurrent: []
+  instantiateDialogIfQuestsExistsInCompleted: []
+  removeDialogIfQuestsHasCompleted: []
+  diffrentStartSounds: []
+  startSoundPitchRange: 0
+  canPlaySound: 1
+  speechBubbles:
+  - NameOfTalkingNPC: Martin
+    PortraitOfTalkingNPC: {fileID: 21300000, guid: f0b4b0af315f65841844d677b87b0fc3,
+      type: 3}
+    AnimationSpeed: 0
+    soundThatPlayDuringDialogue:
+    - {fileID: 8300000, guid: d435d626c0ae69e4ca6b0fc6d602e22b, type: 3}
+    soundPitch: 0
+    soundTimeDelay: 0
+    Text: Alexandra. Can I help you with anything?
+    dialogueTree: 0
+  - NameOfTalkingNPC: Alex
+    PortraitOfTalkingNPC: {fileID: 21300000, guid: 1c4f4a35ff23b7c4ea6ec70ef80f399d,
+      type: 3}
+    AnimationSpeed: 0
+    soundThatPlayDuringDialogue:
+    - {fileID: 8300000, guid: 49bc95d9906fcfa4faa933ef0977f5fa, type: 3}
+    soundPitch: 0
+    soundTimeDelay: 0
+    Text: Oh, uh... No, it's fine, I was just feeling a bit lost. Sorry for bothering
+      you.
+    dialogueTree: 0
+  - NameOfTalkingNPC: Martin
+    PortraitOfTalkingNPC: {fileID: 21300000, guid: e5634c0bd3ede3c4d8c99ec10ec3e1bb,
+      type: 3}
+    AnimationSpeed: 0
+    soundThatPlayDuringDialogue:
+    - {fileID: 8300000, guid: d435d626c0ae69e4ca6b0fc6d602e22b, type: 3}
+    soundPitch: 0
+    soundTimeDelay: 0
+    Text: No problem at all, Alexandra. Take care of yourself.
+    dialogueTree: 0
+  canRepeat: 1
+  hasBeenRead: 0
+  siblings: []
+  answers: []
+  doAfterDialgue:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1989433043
 GameObject:
   m_ObjectHideFlags: 0
