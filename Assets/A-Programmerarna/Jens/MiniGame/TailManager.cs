@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class TailManager : MonoBehaviour
 {
+    public Text text;
     enum MoveState { move, wall, apple, bugApple };
 
     //LineRenderer lineRenderer;
@@ -21,27 +23,39 @@ public class TailManager : MonoBehaviour
 
     public UnityEvent victryEvent;
     // Update is called once per frame
+    float f = 0;
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W))
+        f += Time.deltaTime;
+        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
         {
             move(Vector2.up);
             //dir = Vector2.up;//For automaticMovement
         }
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
         {
             move(Vector2.left);
             //dir = Vector2.left;//For automaticMovement
         }
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
         {
             move(Vector2.down);
             //dir = Vector2.down;//For automaticMovement
         }
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
         {
             move(Vector2.right);
             //dir = Vector2.right;//For automaticMovement
+        }
+
+        if (f >= 5.0f)
+        {
+            float alpha = Mathf.Sin(f - 5.0f);
+            text.color = new Color(1, 1, 1, alpha);
+        }
+        else
+        {
+            text.color = new Color(1, 1, 1, 0);
         }
     }
 
@@ -85,6 +99,7 @@ public class TailManager : MonoBehaviour
                 if (tailPart.Count > 0)
                 {
                     moveForwardLastBlock(pos);
+                    f = 0;
                 }
                 break;
 
