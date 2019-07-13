@@ -93,6 +93,7 @@ public class SceneController : MonoBehaviour
             }
 
 
+            DialogManager.Instance.ResetDialogSystem();
             SceneManager.LoadScene(scene);
             yield return new WaitForSeconds(f);
 

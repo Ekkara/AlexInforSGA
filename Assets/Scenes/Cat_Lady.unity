@@ -2797,9 +2797,9 @@ MonoBehaviour:
       type: 3}
     AnimationSpeed: 0
     soundThatPlayDuringDialogue:
-    - {fileID: 0}
+    - {fileID: 8300000, guid: 9d1982ff06a27c448a0c1dc44192456d, type: 3}
     soundPitch: 0
-    soundTimeDelay: 0
+    soundTimeDelay: 10
     Text: Meow
     dialogueTree: 0
   - NameOfTalkingNPC: Bertha

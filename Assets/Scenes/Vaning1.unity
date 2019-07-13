@@ -2355,6 +2355,7 @@ MonoBehaviour:
   activateDialogWith:
     onCollisionEnter: 0
     onCollisionStayWithDelay: 1
+    delayOnly: 0
     delay: 0
     onCollisionAndKeyDown: 0
     onFunctionCall: 0
@@ -2448,6 +2449,7 @@ MonoBehaviour:
   activateDialogWith:
     onCollisionEnter: 0
     onCollisionStayWithDelay: 0
+    delayOnly: 0
     delay: 0
     onCollisionAndKeyDown: 0
     onFunctionCall: 1
@@ -2826,6 +2828,7 @@ MonoBehaviour:
   activateDialogWith:
     onCollisionEnter: 0
     onCollisionStayWithDelay: 0
+    delayOnly: 0
     delay: 0
     onCollisionAndKeyDown: 0
     onFunctionCall: 1
@@ -2925,7 +2928,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1873173341
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: 3000
   m_Sprite: {fileID: 21300000, guid: 8a2a49d17c4d2b041a2b51885aa49bda, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_FlipX: 0

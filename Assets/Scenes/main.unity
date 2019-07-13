@@ -650,6 +650,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114762859935912782, guid: 4baeaba0f6929cd4cba18b941394af66,
+        type: 2}
+      propertyPath: items.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 224741211736303776, guid: 4baeaba0f6929cd4cba18b941394af66,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -760,6 +765,12 @@ Prefab:
       propertyPath: travelSound
       value: 
       objectReference: {fileID: 8300000, guid: 317c233cbcd691f4a908ce84c1e1dd99, type: 3}
+    - target: {fileID: 114762859935912782, guid: 4baeaba0f6929cd4cba18b941394af66,
+        type: 2}
+      propertyPath: items.Array.data[1].item
+      value: 
+      objectReference: {fileID: 11400000, guid: c074afdfef78f424e8f6a1b7546a2323,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4baeaba0f6929cd4cba18b941394af66, type: 2}
   m_IsPrefabParent: 0
