@@ -546,6 +546,7 @@ MonoBehaviour:
   activateDialogWith:
     onCollisionEnter: 0
     onCollisionStayWithDelay: 0
+    delayOnly: 0
     delay: 0
     onCollisionAndKeyDown: 0
     onFunctionCall: 1
@@ -611,6 +612,7 @@ MonoBehaviour:
   activateDialogWith:
     onCollisionEnter: 0
     onCollisionStayWithDelay: 0
+    delayOnly: 0
     delay: 1
     onCollisionAndKeyDown: 0
     onFunctionCall: 1
@@ -1820,6 +1822,7 @@ MonoBehaviour:
   activateDialogWith:
     onCollisionEnter: 0
     onCollisionStayWithDelay: 1
+    delayOnly: 0
     delay: 0
     onCollisionAndKeyDown: 0
     onFunctionCall: 0
@@ -2532,6 +2535,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114762859935912782, guid: 4baeaba0f6929cd4cba18b941394af66,
+        type: 2}
+      propertyPath: items.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 224741211736303776, guid: 4baeaba0f6929cd4cba18b941394af66,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -2622,6 +2630,12 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114762859935912782, guid: 4baeaba0f6929cd4cba18b941394af66,
+        type: 2}
+      propertyPath: items.Array.data[1].item
+      value: 
+      objectReference: {fileID: 11400000, guid: c074afdfef78f424e8f6a1b7546a2323,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4baeaba0f6929cd4cba18b941394af66, type: 2}
   m_IsPrefabParent: 0
@@ -2984,6 +2998,7 @@ MonoBehaviour:
   activateDialogWith:
     onCollisionEnter: 0
     onCollisionStayWithDelay: 0
+    delayOnly: 0
     delay: 0
     onCollisionAndKeyDown: 0
     onFunctionCall: 1
@@ -4573,6 +4588,7 @@ MonoBehaviour:
   activateDialogWith:
     onCollisionEnter: 0
     onCollisionStayWithDelay: 0
+    delayOnly: 0
     delay: 0
     onCollisionAndKeyDown: 0
     onFunctionCall: 1
@@ -4988,6 +5004,7 @@ MonoBehaviour:
   activateDialogWith:
     onCollisionEnter: 0
     onCollisionStayWithDelay: 0
+    delayOnly: 0
     delay: 0
     onCollisionAndKeyDown: 1
     onFunctionCall: 0
@@ -5295,6 +5312,7 @@ MonoBehaviour:
   activateDialogWith:
     onCollisionEnter: 0
     onCollisionStayWithDelay: 0
+    delayOnly: 0
     delay: 0
     onCollisionAndKeyDown: 0
     onFunctionCall: 1
@@ -5704,6 +5722,7 @@ MonoBehaviour:
   activateDialogWith:
     onCollisionEnter: 0
     onCollisionStayWithDelay: 0
+    delayOnly: 0
     delay: 1
     onCollisionAndKeyDown: 0
     onFunctionCall: 1
@@ -5755,6 +5774,7 @@ MonoBehaviour:
   activateDialogWith:
     onCollisionEnter: 0
     onCollisionStayWithDelay: 0
+    delayOnly: 0
     delay: 1
     onCollisionAndKeyDown: 0
     onFunctionCall: 1
@@ -5806,6 +5826,7 @@ MonoBehaviour:
   activateDialogWith:
     onCollisionEnter: 0
     onCollisionStayWithDelay: 0
+    delayOnly: 0
     delay: 1
     onCollisionAndKeyDown: 0
     onFunctionCall: 1
@@ -6403,6 +6424,7 @@ MonoBehaviour:
   activateDialogWith:
     onCollisionEnter: 0
     onCollisionStayWithDelay: 1
+    delayOnly: 0
     delay: 0
     onCollisionAndKeyDown: 0
     onFunctionCall: 0
@@ -6595,6 +6617,7 @@ MonoBehaviour:
   activateDialogWith:
     onCollisionEnter: 0
     onCollisionStayWithDelay: 1
+    delayOnly: 0
     delay: 0
     onCollisionAndKeyDown: 0
     onFunctionCall: 0
@@ -7265,6 +7288,7 @@ MonoBehaviour:
   activateDialogWith:
     onCollisionEnter: 0
     onCollisionStayWithDelay: 0
+    delayOnly: 0
     delay: 0
     onCollisionAndKeyDown: 0
     onFunctionCall: 1
@@ -7383,6 +7407,7 @@ MonoBehaviour:
   activateDialogWith:
     onCollisionEnter: 0
     onCollisionStayWithDelay: 0
+    delayOnly: 0
     delay: 0
     onCollisionAndKeyDown: 1
     onFunctionCall: 0
@@ -7706,6 +7731,7 @@ MonoBehaviour:
   activateDialogWith:
     onCollisionEnter: 0
     onCollisionStayWithDelay: 0
+    delayOnly: 0
     delay: 1
     onCollisionAndKeyDown: 0
     onFunctionCall: 1

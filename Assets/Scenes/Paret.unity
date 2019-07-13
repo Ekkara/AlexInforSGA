@@ -1625,6 +1625,7 @@ MonoBehaviour:
   activateDialogWith:
     onCollisionEnter: 0
     onCollisionStayWithDelay: 1
+    delayOnly: 0
     delay: 0
     onCollisionAndKeyDown: 0
     onFunctionCall: 0
@@ -4690,7 +4691,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1625019518}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 346c4671fce28834cbbd365f63d5b9c8, type: 3}
   m_Name: 
@@ -4705,7 +4706,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1625019518}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
@@ -5898,6 +5899,7 @@ MonoBehaviour:
   activateDialogWith:
     onCollisionEnter: 0
     onCollisionStayWithDelay: 0
+    delayOnly: 0
     delay: 0
     onCollisionAndKeyDown: 1
     onFunctionCall: 0

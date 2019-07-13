@@ -46,7 +46,7 @@ public class SceneTrigger : MonoBehaviour
 
     public void LoadScene()
     {
-        if(scene == "Credits")
+        if (scene == "Credits")
         {
             bagCanvas.Instance.image.color = new Color(0, 0, 0, 0);
         }

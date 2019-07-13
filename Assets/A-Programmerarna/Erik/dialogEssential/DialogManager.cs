@@ -119,6 +119,24 @@ public class DialogManager : MonoBehaviour
         quedDialogs.Add(newConversation);
     }
 
+    public void ResetDialogSystem()
+    {
+        ChoseDialogue.Instance.leaveMultyChoiceDialogue();
+        
+        
+        quedDialogs.Clear();
+        //activeDialog.holder.GetComponent<ContaningDialog>().hasBeenRead = true;
+        activeDialog = null;
+        isInDialogue = false;
+        newMovement.canMove = true;
+
+        dialogTextUI.enabled = false;
+        dialogNameTagUI.enabled = false;
+        dialogPortraitImageUI.enabled = false;
+        ChoseDialogue.Instance.gameObject.GetComponent<Image>().enabled = false;
+
+    }
+
     public void createAnswers()
     {
         //ifall nya objekt ska skapas efter dialogen görs det här
@@ -286,7 +304,7 @@ public class DialogManager : MonoBehaviour
                     isInDialogue = true;
                     ChoseDialogue.Instance.gameObject.GetComponent<Image>().enabled = true;
                     newMovement.canMove = false;
-                 
+
                 }
                 else if (quedDialogs.Count >= 2)
                 {
@@ -296,9 +314,9 @@ public class DialogManager : MonoBehaviour
                     isInDialogue = true;
                     ChoseDialogue.Instance.gameObject.GetComponent<Image>().enabled = true;
                     newMovement.canMove = false;
-                
+
                 }
-               
+
             }
         }
     }
