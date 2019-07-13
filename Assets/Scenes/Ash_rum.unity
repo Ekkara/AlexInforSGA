@@ -1212,6 +1212,7 @@ MonoBehaviour:
   activateDialogWith:
     onCollisionEnter: 0
     onCollisionStayWithDelay: 1
+    delayOnly: 0
     delay: 0
     onCollisionAndKeyDown: 0
     onFunctionCall: 0
@@ -2936,6 +2937,7 @@ MonoBehaviour:
   activateDialogWith:
     onCollisionEnter: 0
     onCollisionStayWithDelay: 0
+    delayOnly: 0
     delay: 0
     onCollisionAndKeyDown: 1
     onFunctionCall: 0
@@ -3096,9 +3098,9 @@ SpriteRenderer:
   m_SortingLayerID: 1873173341
   m_SortingLayer: 2
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: 6f3b1533b4879b64a898885730599908, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b54c4e2c23f58c64e802f2a669db3ff4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 2}
@@ -3232,6 +3234,7 @@ MonoBehaviour:
   activateDialogWith:
     onCollisionEnter: 0
     onCollisionStayWithDelay: 0
+    delayOnly: 0
     delay: 0
     onCollisionAndKeyDown: 1
     onFunctionCall: 0
@@ -3300,6 +3303,7 @@ MonoBehaviour:
   activateDialogWith:
     onCollisionEnter: 0
     onCollisionStayWithDelay: 1
+    delayOnly: 0
     delay: 0
     onCollisionAndKeyDown: 0
     onFunctionCall: 0

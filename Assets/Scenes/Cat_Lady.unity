@@ -2821,8 +2821,8 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 4dc7088c299e1b5468d180b055b27372, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
-    Text: "Well, hopefully we\u2019ll get Taffy back soon, we just need to catch Mittens
-      and make the swap for Taffy."
+    Text: Well, hopefully Taffy will be back soon, (we just need to catch Mittens
+      and make the swap for Taffy.)
     dialogueTree: 0
   canRepeat: 0
   hasBeenRead: 0
@@ -6576,6 +6576,7 @@ GameObject:
   - component: {fileID: 1975055580}
   - component: {fileID: 1975055582}
   - component: {fileID: 1975055583}
+  - component: {fileID: 1975055584}
   m_Layer: 0
   m_Name: Puzzle done dialogue
   m_TagString: Untagged
@@ -6746,6 +6747,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1975055582
@@ -6779,6 +6791,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questMode: 1
   quest: {fileID: 11400000, guid: 79dedc79a3101f7428f0847687773c22, type: 2}
+--- !u!114 &1975055584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1975055578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d770ace117c600a488fd698309120e1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: 2fda361f42e293c4a8c079e4444d258d, type: 2}
+  removeOnPickup: 0
+  pickupClip: {fileID: 0}
 --- !u!1 &2010172430
 GameObject:
   m_ObjectHideFlags: 0

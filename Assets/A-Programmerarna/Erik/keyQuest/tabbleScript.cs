@@ -26,6 +26,7 @@ public class tabbleScript : MonoBehaviour
     [SerializeField] int cardOrder;
     [SerializeField] AnimationClip pickUpAnimation;
     [SerializeField] AnimationClip putDownAnimation;
+    [SerializeField] GameObject escText;
 
     public List<GameObject> GOInTabbleOverlay = new List<GameObject>();
     public List<Cards> existingCards = new List<Cards>();
@@ -58,6 +59,14 @@ public class tabbleScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(tabbleState == TabbleState.atTabbleAndLooking)
+        {
+            escText.active = true;
+        }
+        else
+        {
+            escText.active = false;
+        }
         switch (tabbleState)
         {
             case TabbleState.atTabbleNotLooking:
