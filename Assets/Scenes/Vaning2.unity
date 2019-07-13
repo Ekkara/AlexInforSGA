@@ -554,6 +554,7 @@ MonoBehaviour:
   activateDialogWith:
     onCollisionEnter: 0
     onCollisionStayWithDelay: 0
+    delayOnly: 0
     delay: 0
     onCollisionAndKeyDown: 0
     onFunctionCall: 0
@@ -750,6 +751,7 @@ MonoBehaviour:
   activateDialogWith:
     onCollisionEnter: 0
     onCollisionStayWithDelay: 0
+    delayOnly: 0
     delay: 0
     onCollisionAndKeyDown: 0
     onFunctionCall: 1
@@ -1279,6 +1281,7 @@ MonoBehaviour:
   activateDialogWith:
     onCollisionEnter: 0
     onCollisionStayWithDelay: 0
+    delayOnly: 0
     delay: 0
     onCollisionAndKeyDown: 0
     onFunctionCall: 1
@@ -2102,6 +2105,7 @@ MonoBehaviour:
   activateDialogWith:
     onCollisionEnter: 0
     onCollisionStayWithDelay: 0
+    delayOnly: 0
     delay: 0
     onCollisionAndKeyDown: 1
     onFunctionCall: 0
@@ -3316,6 +3320,7 @@ GameObject:
   - component: {fileID: 1659464517}
   - component: {fileID: 1659464518}
   - component: {fileID: 1659464519}
+  - component: {fileID: 1659464520}
   m_Layer: 0
   m_Name: Rulator
   m_TagString: Untagged
@@ -3413,7 +3418,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1659464513}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 80f454bfb43ead045a83a56780a15357, type: 3}
   m_Name: 
@@ -3454,6 +3459,7 @@ MonoBehaviour:
   activateDialogWith:
     onCollisionEnter: 0
     onCollisionStayWithDelay: 1
+    delayOnly: 0
     delay: 0
     onCollisionAndKeyDown: 0
     onFunctionCall: 0
@@ -3461,6 +3467,20 @@ MonoBehaviour:
   - {fileID: 1704394519}
   isInDialogueTrigger: 0
   StartDelay: 0
+--- !u!114 &1659464520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1659464513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d770ace117c600a488fd698309120e1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: 72cbe869f6e896a47add12cb07f3a640, type: 2}
+  removeOnPickup: 1
+  pickupClip: {fileID: 0}
 --- !u!1 &1678216195
 GameObject:
   m_ObjectHideFlags: 0
@@ -3602,7 +3622,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueName: Rullator pick-up
   instantiateDialogIfQuestsExistsInCurrent: []
-  instantiateDialogIfQuestsExistsInCompleted: []
+  instantiateDialogIfQuestsExistsInCompleted:
+  - {fileID: 11400000, guid: 3dcc059c2ce4b8d42b165ae715f4706e, type: 2}
   removeDialogIfQuestsHasCompleted: []
   diffrentStartSounds:
   - {fileID: 8300000, guid: 487020f73bb49d04f81b98fab23c0ba6, type: 3}
@@ -3647,7 +3668,18 @@ MonoBehaviour:
   answers: []
   doAfterDialgue:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1659464520}
+        m_MethodName: pickup
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!1 &1714849048
