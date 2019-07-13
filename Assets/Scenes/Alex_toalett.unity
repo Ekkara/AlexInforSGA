@@ -980,6 +980,7 @@ MonoBehaviour:
   activateDialogWith:
     onCollisionEnter: 0
     onCollisionStayWithDelay: 1
+    delayOnly: 0
     delay: 0
     onCollisionAndKeyDown: 0
     onFunctionCall: 0
@@ -2120,11 +2121,6 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114169574523356938, guid: 4baeaba0f6929cd4cba18b941394af66,
-        type: 2}
-      propertyPath: menuState
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4baeaba0f6929cd4cba18b941394af66, type: 2}
