@@ -61,7 +61,8 @@ public class newMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("FPS: " + (int)(1f / Time.unscaledDeltaTime));
+
+        Debug.Log(prevousilyType.nameOfAnimation);
         List<movementType> temp = new List<movementType>();
 
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
@@ -103,14 +104,14 @@ public class newMovement : MonoBehaviour
         {
             upIsPressed = false;
         }
-        if (temp.Count == 0)
+        if (temp.Count == 0 && prevousilyType.nameOfAnimation != "Idle")
         {
             updateAnimation("Idle");
         }
         
         switch (ActivatedKeyCodeState)
         {
-            case "Idle": 
+            case "Idle":
                 if (newMovement.canMove)
                 {
                     if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
@@ -373,7 +374,11 @@ public class newMovement : MonoBehaviour
                 updateAnimation("Idle");
             }
 
-            if (frameCount <= frameAt) { frameAt = 0; }
+            if (frameCount <= frameAt)
+            {
+                frameAt = 0;
+            }
+
 
                 Rect drawedImage = new Rect(64 * frameAt, 0, 64, 64);
                 Sprite currentRect = Sprite.Create(currentAnimation, drawedImage, new Vector2(0.5f, 0.5f), 100.0f);
@@ -386,7 +391,6 @@ public class newMovement : MonoBehaviour
                 {
                     sr.flipX = false;
                 }
-
                 sr.sprite = currentRect;
 
                 if (playFootStepAt.Length == 2)
@@ -409,9 +413,9 @@ public class newMovement : MonoBehaviour
                         footStep.PlayFootsteps();
                     }
                 }
-                yield return new WaitForSeconds(waitTime);
-                frameAt++;
-            
+
+            yield return new WaitForSeconds(waitTime);
+            frameAt++;
         }
     }
     IEnumerator movePlayer(movementType movementType)
