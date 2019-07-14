@@ -136,7 +136,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 17364400}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26, y: 2, z: 62.14103}
+  m_LocalPosition: {x: 33.3, y: 2, z: 62.14103}
   m_LocalScale: {x: 1.3908006, y: 1.3908001, z: 1.3908001}
   m_Children: []
   m_Father: {fileID: 940366805}
@@ -294,8 +294,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 310344790}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -30, y: 39, z: 62.14103}
-  m_LocalScale: {x: 0.7870257, y: 0.78702545, z: 0.78702545}
+  m_LocalPosition: {x: -40.3, y: 23.8, z: 62.14103}
+  m_LocalScale: {x: 0.4352859, y: 0.43528575, z: 0.43528575}
   m_Children: []
   m_Father: {fileID: 940366805}
   m_RootOrder: 2
@@ -367,7 +367,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 461734829}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 23.4, y: 71.7, z: 62.14103}
+  m_LocalPosition: {x: 33.5, y: 54.6, z: 62.14103}
   m_LocalScale: {x: 0.56357706, y: 0.56357664, z: 0.56357664}
   m_Children: []
   m_Father: {fileID: 940366805}
@@ -440,7 +440,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 766926344}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.238846, y: -149.8, z: -0.8776346}
+  m_LocalPosition: {x: -12.238846, y: -146.9, z: -0.8776346}
   m_LocalScale: {x: 6.2141047, y: 6.2141027, z: 6.2141027}
   m_Children:
   - {fileID: 1630397569}
@@ -645,8 +645,8 @@ MonoBehaviour:
   playlistWithCondition:
     completedQuest: {fileID: 11400000, guid: 85dffb2611832f648ae8df5a9af79298, type: 2}
     songs:
-    - {fileID: 8300000, guid: ed74947b634133f4daaa34392899de0a, type: 3}
-    - {fileID: 8300000, guid: 84dcce70f51c7124aa1865f73e887ea1, type: 3}
+    - {fileID: 8300000, guid: 7426a6c03a9868c45b8e4c2e6eab8ab0, type: 3}
+    - {fileID: 8300000, guid: f8e1527566aea74479f3a0713a3d221b, type: 3}
 --- !u!1 &940366801
 GameObject:
   m_ObjectHideFlags: 0
@@ -683,17 +683,18 @@ MonoBehaviour:
   exitTextExist: 7
   exitAlphaChangeSpeed: 4.5
   canExit: 0
-  credits: "Project Leader & Lead Writer:\r\nEmma Quennerstedt \r\n\r\nVice Project
-    Leader & Lead Designer: \r\nAlbin Grundstr\xF6m \r\n\r\nDesign & Concept:\r\nIris
-    Svensson \r\n\r\nWriter:\r\nLevi Gustafsson \r\n\r\nLead Programmer:\r\nJens Larsson\r\n\r\nProgrammers:\r\nDennis
-    Fuchs \r\nErik Gustafsson \r\nAdam Karlsson\r\n\r\nLead Artist:\r\nMalin Alexandersson
-    \r\n\r\nArtists:\r\nJesper Karlsson  \r\nMirjana Mrdjen\r\nSofie Norgren \r\n\r\nLead
-    Music:\r\nJohan H\xE4rnvi \r\n\r\nMusic:\r\nJohan Wetterin \r\n\r\nLead Sound:\r\nKevin
-    Samuelsson\r\n\r\nSound:\r\nErik Larsson \r\n\nVoice Actors:\nFrans  Alexandersson
-    ------------- Ed\nTove Backenroth -------Sam & Bertha\nAlex Bode --------------------------
-    Ash\nSilia Hahne ------------------------ Alex\nErik Larsson ------------------------
-    Jon\nKristina Larsson ---------- Alex Mother\nKevin Samuelsson\r ---- Martin &
-    Spirit \n\n\r\nSpecial Thanks:\nVilma Nygren\r\nErik Strand\r\nJesper Wiking"
+  credits: "Emma Quennerstedt - Project Lead and Lead Story\r\n\r\nAlbin Grundstr\xF6m
+    - Vice Project Lead and Lead Design\r\n\r\nIris Svensson - Design and Concept\r\n\r\nLevi
+    Gustafsson - Story\r\n\r\nJens Larsson - Lead Programmer\r\n\r\nDennis Fuchs -
+    Programmer\r\n\r\nErik Gustafsson - Programmer\r\n\r\nAdam Karlsson - Programmer\r\n\r\nMalin
+    Alexandersson - Lead Art \r\n\r\nJesper Karlsson  - Art\r\n\r\nMirjana Mrdjen
+    - Art \r\n\r\nSofie Norgren - Art \r\n\r\nJohan H\xE4rnvi - Lead Music \r\n\r\nJohan
+    Wetterin - Music\r\n\r\nKevin Samuelsson - Lead Sound \r\n\r\nErik Larsson - Sound\n\nVoice
+    Actors:\nFrans  Alexandersson ------------- Ed\nTove Backenroth -------Sam & Bertha\nAlex
+    Bode -------------------------- Ash\nSilia Hahne ------------------------ Alex\nErik
+    Larsson ------------------------ Jon\nKristina Larsson ---------- Alex Mother\nKevin
+    Samuelsson\r ---- Martin & Spirit \n\n\r\nSpecial Thanks:\nVilma Nygren\r\nErik
+    Strand\r\nJesper Wiking"
 --- !u!102 &940366803
 TextMesh:
   serializedVersion: 3
@@ -701,17 +702,18 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 940366801}
-  m_Text: "Project Leader & Lead Writer:\r\nEmma Quennerstedt \r\n\r\nVice Project
-    Leader & Lead Designer: \r\nAlbin Grundstr\xF6m \r\n\r\nDesign & Concept:\r\nIris
-    Svensson \r\n\r\nWriter:\r\nLevi Gustafsson \r\n\r\nLead Programmer:\r\nJens Larsson\r\n\r\nProgrammers:\r\nDennis
-    Fuchs \r\nErik Gustafsson \r\nAdam Karlsson\r\n\r\nLead Artist:\r\nMalin Alexandersson
-    \r\n\r\nArtists:\r\nJesper Karlsson  \r\nMirjana Mrdjen\r\nSofie Norgren \r\n\r\nLead
-    Music:\r\nJohan H\xE4rnvi \r\n\r\nMusic:\r\nJohan Wetterin \r\n\r\nLead Sound:\r\nKevin
-    Samuelsson\r\n\r\nSound:\r\nErik Larsson \r\n\nVoice Acters:\nFrans  Alexandersson
-    ------------- Ed\nTove Backenroth - the Sam & Bertha\nAlex Bode --------------------------
-    Ash\nSilia Hahne ------------------------ Alex\nErik Larsson ------------------------
-    Jon\nKristina Larsson ---------- Alex Mother\nKevin Samuelsson\r ---- Martin &
-    Spirit \n\n\r\nSpecial Thanks:\nVilma Nygren\r\nErik Strand\r\nJesper Wiking"
+  m_Text: "Emma Quennerstedt - Project Lead and Lead Story\r\n\r\nAlbin Grundstr\xF6m
+    - Vice Project Lead and Lead Design\r\n\r\nIris Svensson - Design and Concept\r\n\r\nLevi
+    Gustafsson - Story\r\n\r\nJens Larsson - Lead Programmer\r\n\r\nDennis Fuchs -
+    Programmer\r\n\r\nErik Gustafsson - Programmer\r\n\r\nAdam Karlsson - Programmer\r\n\r\nMalin
+    Alexandersson - Lead Art \r\n\r\nJesper Karlsson  - Art\r\n\r\nMirjana Mrdjen
+    - Art \r\n\r\nSofie Norgren - Art \r\n\r\nJohan H\xE4rnvi - Lead Music \r\n\r\nJohan
+    Wetterin - Music\r\n\r\nKevin Samuelsson - Lead Sound \r\n\r\nErik Larsson - Sound\n\nVoice
+    Actors:\nFrans  Alexandersson ------------- Ed\nTove Backenroth -------Sam & Bertha\nAlex
+    Bode -------------------------- Ash\nSilia Hahne ------------------------ Alex\nErik
+    Larsson ------------------------ Jon\nKristina Larsson ---------- Alex Mother\nKevin
+    Samuelsson\r ---- Martin & Spirit \n\n\r\nSpecial Thanks:\nVilma Nygren\r\nErik
+    Strand\r\nJesper Wiking"
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -949,8 +951,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1728252512}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -47.737003, y: 38.999977, z: 62.14103}
-  m_LocalScale: {x: 0.7870257, y: 0.78702545, z: 0.78702545}
+  m_LocalPosition: {x: -50.1, y: 23.799974, z: 62.14103}
+  m_LocalScale: {x: 0.4352859, y: 0.43528575, z: 0.43528575}
   m_Children: []
   m_Father: {fileID: 940366805}
   m_RootOrder: 1
@@ -1022,7 +1024,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2123218218}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -30.8, y: -98.9, z: 62.14103}
+  m_LocalPosition: {x: -30.8, y: -95.6, z: 62.14103}
   m_LocalScale: {x: 0.7819561, y: 0.7819559, z: 0.7819559}
   m_Children: []
   m_Father: {fileID: 940366805}
