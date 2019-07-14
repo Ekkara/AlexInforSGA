@@ -4671,7 +4671,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4719768958738748, guid: e5fc137eeab416449ae08890eddd5776, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -1.43
+      value: -0.93
       objectReference: {fileID: 0}
     - target: {fileID: 4719768958738748, guid: e5fc137eeab416449ae08890eddd5776, type: 2}
       propertyPath: m_LocalPosition.y
@@ -6658,8 +6658,7 @@ MonoBehaviour:
     PortraitOfTalkingNPC: {fileID: 21300000, guid: c0fc61ad1052daa4f907a5ea52c368e2,
       type: 3}
     AnimationSpeed: 0.04
-    soundThatPlayDuringDialogue:
-    - {fileID: 0}
+    soundThatPlayDuringDialogue: []
     soundPitch: 0
     soundTimeDelay: 0
     Text: Meow
@@ -6747,12 +6746,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: 
+      - m_Target: {fileID: 1975055584}
+        m_MethodName: pickup
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

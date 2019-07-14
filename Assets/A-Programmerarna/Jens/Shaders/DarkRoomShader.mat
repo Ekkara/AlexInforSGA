@@ -62,8 +62,8 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _MaskPosX: -0.004999866
-    - _MaskPosY: -1.028
+    - _MaskPosX: 2.9551125
+    - _MaskPosY: 2.0880027
     - _Max: 1
     - _Metallic: 0
     - _Min: 0

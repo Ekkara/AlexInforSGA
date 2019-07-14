@@ -2478,7 +2478,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 49bc95d9906fcfa4faa933ef0977f5fa, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
-    Text: (hmmm, Mittens is the black cat over there, I some how need to chase her
+    Text: (Hmmm, Mittens is the black cat over there, I somehow need to chase him
       into the blue cage)
     dialogueTree: 0
   canRepeat: 0

@@ -72,7 +72,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1092889690248178}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.613, y: 0.092, z: 0}
+  m_LocalPosition: {x: -3.96, y: 2.16, z: 0}
   m_LocalScale: {x: 1.464672, y: 1.464672, z: 1.464672}
   m_Children:
   - {fileID: 4314824544666662}
@@ -347,6 +347,9 @@ MonoBehaviour:
     frameOfStep: 00000000
     prioOrder: 0
   controllCheckSpeed: 1
+  ScenePlayersCantRunIn:
+  - Vinden
+  - Hoarder_room
 --- !u!114 &114807486082234826
 MonoBehaviour:
   m_ObjectHideFlags: 1

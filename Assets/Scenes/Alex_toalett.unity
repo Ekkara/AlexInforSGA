@@ -1884,6 +1884,7 @@ GameObject:
   - component: {fileID: 1904692827}
   - component: {fileID: 1904692826}
   - component: {fileID: 1904692829}
+  - component: {fileID: 1904692830}
   m_Layer: 0
   m_Name: Fotolj2
   m_TagString: Untagged
@@ -1995,6 +1996,20 @@ MonoBehaviour:
   effectMat: {fileID: 2100000, guid: a3b1dde38cffb694b85fa6eea1a24df6, type: 2}
   clip: []
   typeOfElement: 0
+--- !u!114 &1904692830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1904692825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ede581d6d6b4804aa965d543957b7bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameOfQuest: {fileID: 11400000, guid: c0af8ea7ed850c14585f4c393ca5b9a8, type: 2}
+  potty1: {fileID: 1115464352}
+  potty2: {fileID: 619987792}
 --- !u!1 &2010172430
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using  UnityEngine.SceneManagement;
 
 [System.Serializable]
 public struct movementType
@@ -40,12 +40,19 @@ public class newMovement : MonoBehaviour
     bool upIsPressed = false;
     bool downIsPressed = false;
     movementType prioMovmentType;
+
+    //vem skapade denna variabel? vad gör den? ser inte att den används /Erik
     [SerializeField] float controllCheckSpeed = 1;
     int times = 0;
+
+    [SerializeField] string[] ScenePlayersCantRunIn;
+    bool canRun;
 
     // Use this for initialization
     void Start()
     {
+        canRun = canRunInThisScene();
+
         canMove = true;
 
 
@@ -57,7 +64,17 @@ public class newMovement : MonoBehaviour
         rb = gameObject.GetComponent<Rigidbody2D>();
         StartCoroutine(playAnimation(findAnimation("Idle")));
     }
-
+    bool canRunInThisScene()
+    {
+        for (int i = 0; i < ScenePlayersCantRunIn.Length; i++)
+        {
+            if (SceneManager.GetActiveScene().name == ScenePlayersCantRunIn[i])
+            {
+                return false;
+            }         
+        }
+        return true;
+    }
     // Update is called once per frame
     void Update()
     {
@@ -333,7 +350,7 @@ public class newMovement : MonoBehaviour
         {
             if (allAnimations[i].nameOfAnimation == animationName)
             {
-                if (isRunning)
+                if (isRunning && canRun)
                 {
                     return runAnimations[i];
                 }
