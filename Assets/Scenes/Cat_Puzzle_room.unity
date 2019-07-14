@@ -3608,7 +3608,7 @@ MonoBehaviour:
     onCollisionAndKeyDown: 0
     onFunctionCall: 0
   thisCharacterConversations:
-  - {fileID: 0}
+  - {fileID: 834078217}
   isInDialogueTrigger: 0
   StartDelay: 0
 --- !u!61 &1326655453

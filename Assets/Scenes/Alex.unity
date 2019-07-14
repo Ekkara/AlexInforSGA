@@ -1236,7 +1236,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 4dc7088c299e1b5468d180b055b27372, type: 3}
     soundPitch: 0
     soundTimeDelay: 0
-    Text: 'Ah, here it is! '
+    Text: Ah, the shopping list
     dialogueTree: 0
   - NameOfTalkingNPC: Alex
     PortraitOfTalkingNPC: {fileID: 21300000, guid: 1c4f4a35ff23b7c4ea6ec70ef80f399d,
@@ -4858,6 +4858,61 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!1001 &1211446137
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1244072532}
+    m_Modifications:
+    - target: {fileID: 4966569422064322, guid: 791657c30931f5f43beb9298b32a16f5, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 2.418
+      objectReference: {fileID: 0}
+    - target: {fileID: 4966569422064322, guid: 791657c30931f5f43beb9298b32a16f5, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4966569422064322, guid: 791657c30931f5f43beb9298b32a16f5, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.0053710938
+      objectReference: {fileID: 0}
+    - target: {fileID: 4966569422064322, guid: 791657c30931f5f43beb9298b32a16f5, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4966569422064322, guid: 791657c30931f5f43beb9298b32a16f5, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4966569422064322, guid: 791657c30931f5f43beb9298b32a16f5, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0.23369987
+      objectReference: {fileID: 0}
+    - target: {fileID: 4966569422064322, guid: 791657c30931f5f43beb9298b32a16f5, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.9723088
+      objectReference: {fileID: 0}
+    - target: {fileID: 4966569422064322, guid: 791657c30931f5f43beb9298b32a16f5, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4966569422064322, guid: 791657c30931f5f43beb9298b32a16f5, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 3.5213845
+      objectReference: {fileID: 0}
+    - target: {fileID: 4966569422064322, guid: 791657c30931f5f43beb9298b32a16f5, type: 2}
+      propertyPath: m_LocalScale.y
+      value: -5.8479853
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 791657c30931f5f43beb9298b32a16f5, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1211446138 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4966569422064322, guid: 791657c30931f5f43beb9298b32a16f5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1211446137}
 --- !u!1 &1239457242
 GameObject:
   m_ObjectHideFlags: 0
@@ -5251,7 +5306,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: -0.23369987, w: 0.9723088}
   m_LocalPosition: {x: -3.349, y: 0.308, z: 0}
   m_LocalScale: {x: 0.37, y: -0.15, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1211446138}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -27.03}
